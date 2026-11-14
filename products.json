@@ -1,0 +1,53 @@
+{
+ "_help": "To add a product, copy one block, change the fields, and put your Amazon link in 'url'. category must be Protein, Supplements or Gear. Leave 'image' empty to show an icon. Set 'enabled' to true when the link is real.",
+ "products": [
+  {
+   "enabled": true,
+   "category": "Protein",
+   "title": "MuscleBlaze Biozyme Iso-Zero Whey Protein Isolate, 1 kg",
+   "note": "Whey protein isolate powder, 1 kg pack",
+   "url": "https://link.amazon/B09AVqkle",
+   "image": ""
+  },
+  {
+   "enabled": false,
+   "category": "Supplements",
+   "title": "Creatine monohydrate (placeholder)",
+   "note": "Add your pick and why you like it",
+   "url": "PASTE-AMAZON-LINK-HERE",
+   "image": ""
+  },
+  {
+   "enabled": false,
+   "category": "Supplements",
+   "title": "Vitamin D3 (placeholder)",
+   "note": "Add your pick and why you like it",
+   "url": "PASTE-AMAZON-LINK-HERE",
+   "image": ""
+  },
+  {
+   "enabled": false,
+   "category": "Supplements",
+   "title": "Omega-3 (placeholder)",
+   "note": "Add your pick and why you like it",
+   "url": "PASTE-AMAZON-LINK-HERE",
+   "image": ""
+  },
+  {
+   "enabled": false,
+   "category": "Gear",
+   "title": "Resistance bands (placeholder)",
+   "note": "Add your pick and why you like it",
+   "url": "PASTE-AMAZON-LINK-HERE",
+   "image": ""
+  },
+  {
+   "enabled": false,
+   "category": "Gear",
+   "title": "Shaker bottle (placeholder)",
+   "note": "Add your pick and why you like it",
+   "url": "PASTE-AMAZON-LINK-HERE",
+   "image": ""
+  }
+ ]
+}
