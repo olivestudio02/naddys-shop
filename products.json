@@ -11,6 +11,14 @@
   },
   {
    "enabled": true,
+   "category": "Protein",
+   "title": "TrueBasics Clean Whey Protein (Isolate + Concentrate)",
+   "note": "My pick for a whey that is light on the gut. It is easy to digest and gentle on the stomach.",
+   "url": "https://link.amazon/B0dsZw2JC",
+   "image": "images/truebasics-whey.jpg"
+  },
+  {
+   "enabled": true,
    "category": "Supplements",
    "title": "MuscleBlaze Biozyme Daily Multivitamin, 90 Tablets",
    "note": "5-in-1 multivitamin: vitamins, minerals, joint and T-booster blend",
