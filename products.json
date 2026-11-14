@@ -10,6 +10,14 @@
    "image": "images/whey-isolate.jpg"
   },
   {
+   "enabled": true,
+   "category": "Supplements",
+   "title": "MuscleBlaze Biozyme Daily Multivitamin, 90 Tablets",
+   "note": "5-in-1 multivitamin: vitamins, minerals, joint and T-booster blend",
+   "url": "https://link.amazon/B0iJufzks",
+   "image": ""
+  },
+  {
    "enabled": false,
    "category": "Supplements",
    "title": "Creatine monohydrate (placeholder)",
