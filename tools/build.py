@@ -6,31 +6,56 @@ SITE = "https://naddysstudio.com"
 IG = "https://www.instagram.com/naddys_studio/"
 YT = "https://www.youtube.com/@Naddys_Studio"
 
-CSS = """:root{--bg:#0b0b0c;--card:#151517;--line:#2a2a2d;--red:#6ec4ff;--txt:#f4eeea;--mut:#a09a96}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 400px at 50% -100px,#0f2a3d,transparent),var(--bg);color:var(--txt);font:17px/1.6 -apple-system,system-ui,Segoe UI,Roboto,sans-serif;padding:0 16px env(safe-area-inset-bottom)}
-.wrap{max-width:720px;margin:0 auto}a{color:var(--red)}
-nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);gap:8px}
+CSS = """:root{--bg:#09090b;--card:#141417;--line:#26262b;--red:#6ec4ff;--red2:#3a9de0;--txt:#f5f1ee;--mut:#a3a0a0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1100px 520px at 50% -160px,#10324b,transparent),var(--bg);color:var(--txt);font:17px/1.65 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding:0 0 env(safe-area-inset-bottom);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}.read{max-width:700px;margin:0 auto}a{color:var(--red)}img{max-width:100%}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(9,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:8px;max-width:1040px;margin:0 auto}
 nav .brand{display:flex;align-items:center;gap:8px;text-decoration:none}nav .brand img.i{width:34px;height:auto}nav .brand img.n{width:104px;height:auto}
-nav .links{display:flex;gap:14px;font-size:15px}nav .links a{color:var(--txt);text-decoration:none;padding:6px 0}nav .links a.on{color:var(--red);font-weight:700}
-h1{font-size:30px;line-height:1.2;margin:28px 0 8px}h2{font-size:22px;margin:32px 0 8px}h3{font-size:18px;margin:20px 0 4px}
-p,li{color:#e6e0dc}.mut{color:var(--mut)}.lead{font-size:19px;color:var(--txt)}
-.btn{display:inline-block;margin-top:8px;padding:12px 20px;border-radius:12px;background:var(--red);color:#06121a;font-weight:700;text-decoration:none}
-.btn.o{background:transparent;border:1px solid var(--red);color:var(--red)}
-.box{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:12px;padding:14px 16px;margin:20px 0;font-size:15.5px}
+nav .links{display:flex;gap:6px;font-size:15px;align-items:center}nav .links a{color:var(--txt);text-decoration:none;padding:7px 11px;border-radius:999px}nav .links a.on{color:#06121a;background:var(--red);font-weight:700}
+@media(max-width:560px){nav .brand img.n{display:none}nav .links a{padding:7px 9px}}
+nav .links a.shop{border:1px solid var(--red);color:var(--red)}nav .links a.shop.on{color:#06121a}
+h1{font-size:34px;line-height:1.15;margin:28px 0 10px;letter-spacing:-.5px}h2{font-size:26px;line-height:1.2;margin:40px 0 10px;letter-spacing:-.3px}h3{font-size:19px;margin:22px 0 4px}
+p,li{color:#e9e4e0}.mut{color:var(--mut)}.lead{font-size:19px;color:var(--txt)}
+.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:800;margin:0 0 10px}
+.btn{display:inline-block;margin:8px 8px 0 0;padding:14px 24px;border-radius:14px;background:linear-gradient(135deg,var(--red),var(--red2));color:#04131d;font-weight:800;text-decoration:none}
+.btn.o{background:transparent;border:1.5px solid var(--red);color:var(--red)}
+.box{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:14px;padding:14px 16px;margin:22px 0;font-size:15.5px}
 .box b.t{display:block;color:var(--red);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
-.cards{display:grid;gap:12px;margin:16px 0}.cards a.c{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;text-decoration:none;color:var(--txt)}
-.cards a.c b{display:block;font-size:18px;margin-bottom:4px}.cards a.c span{color:var(--mut);font-size:14.5px}
-.tag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:700}
-.hero{padding:28px 0 8px;text-align:center}.hero img{width:110px;height:auto}
+.hero{display:grid;gap:26px;padding:34px 0 10px;align-items:center}
+.hero .ph{position:relative;border-radius:26px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55),0 0 0 1px rgba(110,196,255,.08)}
+.hero .ph img{display:block;width:100%;height:auto}
+.hero .ph:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(9,9,11,.55))}
+.hero h1{font-size:40px;margin:6px 0 12px}.hero h1 em{font-style:normal;color:var(--red)}
+@media(min-width:820px){.hero{grid-template-columns:1.05fr .95fr;gap:46px;padding:60px 0 26px}.hero h1{font-size:56px}.hero .ph{order:2}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 6px}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 8px;text-align:center}
+.stats b{display:block;font-size:26px;color:var(--red);line-height:1.1}.stats span{font-size:12.5px;color:var(--mut)}
+.cards{display:grid;gap:16px;margin:18px 0}@media(min-width:700px){.cards.two{grid-template-columns:1fr 1fr}.cards.three{grid-template-columns:repeat(3,1fr)}}
+a.c{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:var(--txt);transition:transform .15s,border-color .15s}
+a.c:hover{transform:translateY(-3px);border-color:var(--red)}
+a.c .cv{aspect-ratio:16/10;background:#1b1b20 center/cover no-repeat}a.c .cb{padding:14px 16px 16px}
+a.c b{display:block;font-size:18px;line-height:1.3;margin:4px 0 6px}a.c span.d{color:var(--mut);font-size:14.5px;display:block}
+.tag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:800}
+.pillars{display:grid;gap:12px;margin:14px 0}@media(min-width:700px){.pillars{grid-template-columns:repeat(3,1fr)}}
+.pillars div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}.pillars b{display:block;font-size:17px;margin-bottom:4px}.pillars span{color:var(--mut);font-size:14.5px}
+.story{position:relative;border-radius:26px;overflow:hidden;margin:34px 0;min-height:520px;display:flex;align-items:flex-end;border:1px solid var(--line)}
+.story img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 12%}
+.story:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,9,11,.1) 20%,rgba(9,9,11,.92));z-index:1}
+.story .tx{position:relative;z-index:2;padding:26px 22px;max-width:560px}.story h2{margin:0 0 8px}
+.abouthero{display:grid;gap:24px;padding:30px 0}@media(min-width:820px){.abouthero{grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}}
+.abouthero img{width:100%;height:auto;border-radius:24px;border:1px solid var(--line);display:block}
 .meta{color:var(--mut);font-size:14px}
-footer{border-top:1px solid var(--line);margin-top:40px;padding:20px 0 32px;color:var(--mut);font-size:13.5px;text-align:center}footer a{color:var(--txt)}footer p{margin:6px 0}
+.cta{background:linear-gradient(135deg,#0f2a3d,#12161c);border:1px solid var(--line);border-radius:24px;padding:28px 22px;margin:40px 0;text-align:center}.cta h2{margin:0 0 6px}
+footer{border-top:1px solid var(--line);margin-top:50px;padding:24px 0 36px;color:var(--mut);font-size:13.5px;text-align:center}footer a{color:var(--txt)}footer p{margin:6px 0}
+article.read h2{margin-top:34px}article.read p,article.read li{font-size:18px}
 """
 
 NAV = [("Home","/"),("Articles","/articles/"),("Shop","/shop/"),("About","/about/")]
 
 def page(path, title, desc, body, active="", extra_head="", article=None, og_title=None):
     url = SITE + path
-    nav = "".join(f'<a href="{h}"{" class=on" if n==active else ""}>{n}</a>' for n,h in NAV)
+    nav = "".join(f'<a href="{h}" class="{"shop " if n=="Shop" else ""}{"on" if n==active else ""}">{n}</a>' for n,h in NAV)
     ld = ""
     if article:
         ld = ('<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":%s,"description":%s,"datePublished":"%s","author":{"@type":"Person","name":"Naddy"},"publisher":{"@type":"Organization","name":"Naddys Studio","logo":{"@type":"ImageObject","url":"%s/logo.png"}},"mainEntityOfPage":"%s","image":"%s/og.png"}</script>'
@@ -49,10 +74,9 @@ def page(path, title, desc, body, active="", extra_head="", article=None, og_tit
 <meta name="twitter:card" content="summary_large_image">
 <!-- GOOGLE_SITE_VERIFICATION -->
 {ld}{extra_head}
-<style>{CSS}</style></head><body><div class="wrap">
-<nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links">{nav}</div></nav>
-<main>
-{body}
+<style>{CSS}</style></head><body><div class="topbar"><div class="wrap"><nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links">{nav}</div></nav></div></div>
+<div class="wrap"><main>
+{"<div class=read>"+body+"</div>" if path in ("/disclosure/","/privacy/","/contact/") else body}
 </main>
 <footer>
 <p>As an Amazon Associate I earn from qualifying purchases.</p>
@@ -69,15 +93,16 @@ def jsq(s):
 
 ARTICLES = []
 
+COVERS={"magnesium-for-sleep-and-recovery":"/images/magnesium.jpg","how-to-choose-a-whey-protein":"/images/whey-isolate.jpg"}
 def article(slug, title, desc, date, body, tagline):
     path = f"/articles/{slug}/"
     ARTICLES.append((slug, title, tagline, date))
-    inner = f"""<p class="tag" style="margin-top:28px">Article</p><h1 style="margin-top:6px">{html.escape(title)}</h1>
+    inner = f"""<article class="read"><p class="eyebrow" style="margin-top:30px">Article</p><h1 style="margin-top:0">{html.escape(title)}</h1>
 <p class="meta">By Naddy &middot; {date_h(date)}</p>
 <div class="box"><b class="t">Quick note</b>This is general information from my own research and experience, not medical advice. Talk to your doctor before starting a new supplement, especially if you have a health condition or take medicines.</div>
 {body}
 <div class="box"><b class="t">Disclosure</b>Some links on this page go to Amazon. As an Amazon Associate I earn from qualifying purchases, at no extra cost to you. I only list products I would take myself. <a href="/disclosure/">More here</a>.</div>
-<p><a class="btn o" href="/articles/">More articles</a> <a class="btn" href="/shop/">See my picks</a></p>"""
+<p><a class="btn o" href="/articles/">More articles</a> <a class="btn" href="/shop/">See my picks</a></p></article>"""
     page(path, title + " | Naddys Studio", desc, inner, active="Articles", article=date)
 
 def date_h(d):
@@ -150,37 +175,43 @@ article("how-to-choose-a-whey-protein",
 """, "Concentrate, isolate or blend? Four label checks that matter, and how to avoid fake tubs.")
 
 # ---------- ARTICLES INDEX ----------
-cards = "".join(f'<a class="c" href="/articles/{s}/"><span class="tag">{date_h(d)}</span><b>{html.escape(t)}</b><span>{html.escape(g)}</span></a>' for s,t,g,d in ARTICLES)
+def card(s_,t,g,d):
+    return f'<a class="c" href="/articles/{s_}/"><div class="cv" style="background-image:url({COVERS[s_]})"></div><div class="cb"><span class="tag">{date_h(d)}</span><b>{html.escape(t)}</b><span class="d">{html.escape(g)}</span></div></a>'
+cards = "".join(card(*a_) for a_ in ARTICLES)
 page("/articles/", "Fitness Articles | Naddys Studio",
  "Simple, research-backed fitness articles on supplements, nutrition and training. New articles every week.",
- f'<h1>Articles</h1><p class="lead">Simple, science-backed fitness. New articles every week.</p><div class="cards">{cards}</div>', active="Articles")
+ f'<p class="eyebrow" style="margin-top:34px">Articles</p><h1 style="margin-top:0">Simple, science-backed fitness</h1><p class="lead">New articles every week. No hype, no fake promises.</p><div class="cards two">{cards}</div>', active="Articles")
 
 # ---------- HOME ----------
-cards_home = "".join(f'<a class="c" href="/articles/{s}/"><b>{html.escape(t)}</b><span>{html.escape(g)}</span></a>' for s,t,g,d in ARTICLES)
 page("/", "Naddys Studio | Science-backed fitness, made simple",
  "Science-backed fitness, made simple. Articles on training, nutrition and supplements, plus the products I actually use.",
- f"""<div class="hero"><img src="/logo-icon.png" alt="Naddys Studio"></div>
-<h1 style="text-align:center">Science-backed fitness, made simple</h1>
-<p class="lead" style="text-align:center">I am a corporate employee by day and a fitness addict for life. I lost 20 kg in 6 months and got a six-pack twice. Here I share what actually worked, in plain words.</p>
-<p style="text-align:center"><a class="btn" href="/articles/">Read the articles</a> <a class="btn o" href="/shop/">See my picks</a></p>
-<h2>Latest articles</h2><div class="cards">{cards_home}</div>
-<h2>What I am building</h2>
-<p>My goal is a place where anyone with a busy job can find honest, simple fitness advice that is backed by research, with no hype and no fake promises. Weekly articles, short videos on <a href="{IG}">Instagram</a> and <a href="{YT}">YouTube</a>, and a short list of products I trust.</p>
+ f"""<section class="hero"><div><p class="eyebrow">Naddys Studio</p>
+<h1>Science-backed fitness, <em>made simple</em></h1>
+<p class="lead">Corporate by day, fitness addict for life. I lost 20 kg in 6 months and built a six-pack twice, with a full-time desk job. Here is what actually worked, in plain words.</p>
+<p><a class="btn" href="/articles/">Start reading</a><a class="btn o" href="/shop/">See my picks</a></p>
+<div class="stats"><div><b>20 kg</b><span>lost in 6 months</span></div><div><b>2x</b><span>six-pack built</span></div><div><b>9 to 5</b><span>desk job, no excuses</span></div></div></div>
+<div class="ph"><img src="/images/brand/naddy-kitchen.jpg" alt="Naddy in the kitchen" width="880" height="1168"></div></section>
+<h2>Start here</h2>
+<div class="pillars"><div><b>Training</b><span>Simple plans that fit a busy week.</span></div><div><b>Nutrition</b><span>What to eat, without a diet that ruins your life.</span></div><div><b>Supplements</b><span>What is worth it, and what is not.</span></div></div>
+<h2>Latest articles</h2><div class="cards two">{cards}</div>
+<p><a class="btn o" href="/articles/">All articles</a></p>
+<section class="story"><img src="/images/brand/naddy-gym.jpg" alt="Naddy in the gym" loading="lazy"><div class="tx"><p class="eyebrow">My story</p><h2>No shortcuts. Just what works.</h2><p>I test everything on my own body first. If it does not work for a busy person, I will not tell you to do it.</p><a class="btn" href="/about/">Read my story</a></div></section>
 <div class="box"><b class="t">Why trust this site</b>I test every product on my own body first. I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div>
+<div class="cta"><h2>Follow along</h2><p class="mut">Short tips every day.</p><a class="btn" href="{IG}">Instagram</a><a class="btn o" href="{YT}">YouTube</a></div>
 <script>if(location.hash){{location.replace("/shop/"+location.hash)}}</script>""", active="Home")
 
 # ---------- ABOUT ----------
 page("/about/", "About Naddy | Naddys Studio",
  "Corporate by day, fitness addict for life. How I lost 20 kg in 6 months and why I share simple, science-backed fitness.",
- f"""<h1>About me</h1>
-<p class="lead">Hi, I am Naddy. Corporate by day, fitness addict for life.</p>
-<p>I lost 20 kg in 6 months and have built a six-pack twice. Doing it with a full-time desk job taught me that most fitness advice is either too complicated or too good to be true.</p>
+ f"""<section class="abouthero"><img src="/images/brand/naddy-gym.jpg" alt="Naddy in the gym" width="540" height="955"><div><p class="eyebrow">About me</p><h1 style="margin-top:0">Hi, I am Naddy.</h1>
+<p class="lead">Corporate by day, fitness addict for life.</p>
+<p>I lost 20 kg in 6 months and have built a six-pack twice. Doing it with a full-time desk job taught me that most fitness advice is either too complicated or too good to be true.</p></div></section>
+<div class="read">
 <h2>What this site is</h2>
 <p>A simple place for fitness information I would give a friend: what the research says, what I do myself, and the few products I trust. I share short videos on <a href="{IG}">Instagram</a> and <a href="{YT}">YouTube</a>, and the longer versions here.</p>
 <h2>How I choose products</h2>
 <p>I test every product on my own body first. I check the brand, look for fakes, and recommend only what I am willing to take myself. Some links go to Amazon and I earn a small commission if you buy, at no extra cost to you. <a href="/disclosure/">Read the full disclosure</a>.</p>
-<h2>Where to find me</h2>
-<p><a href="{IG}">Instagram @naddys_studio</a><br><a href="{YT}">YouTube @Naddys_Studio</a><br><a href="/contact/">Contact</a></p>""", active="About")
+<div class="cta"><h2>Where to find me</h2><a class="btn" href="{IG}">Instagram</a><a class="btn o" href="{YT}">YouTube</a><a class="btn o" href="/contact/">Contact</a></div></div>""", active="About")
 
 # ---------- LEGAL ----------
 page("/disclosure/", "Disclosure | Naddys Studio", "How this site earns money and how I choose what to recommend.",

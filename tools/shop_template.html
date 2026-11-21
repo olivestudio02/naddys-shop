@@ -7,10 +7,13 @@
 <link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#0b0b0c">
 <style>
-:root{--bg:#0b0b0c;--card:#151517;--line:#2a2a2d;--red:#6ec4ff;--txt:#f4eeea;--mut:#a09a96}
+@media(max-width:560px){.tb img.n{display:none}.tb .links a{padding:7px 9px}}
+.tb{position:sticky;top:0;z-index:20;background:rgba(9,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);margin:0 -16px;padding:0 16px}.tb nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;max-width:720px;margin:0 auto}.tb .brand{display:flex;align-items:center;gap:8px;text-decoration:none}.tb img.i{width:34px;height:auto}.tb img.n{width:104px;height:auto}.tb .links{display:flex;gap:4px;font-size:15px}.tb .links a{color:#f5f1ee;text-decoration:none;padding:7px 10px;border-radius:999px}.tb .links a.on{background:#6ec4ff;color:#06121a;font-weight:700}
+
+:root{--bg:#09090b;--card:#151517;--line:#2a2a2d;--red:#6ec4ff;--txt:#f4eeea;--mut:#a09a96}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 400px at 50% -100px,#0f2a3d,transparent),var(--bg);color:var(--txt);font:16px/1.45 -apple-system,system-ui,Segoe UI,Roboto,sans-serif;padding:0 16px env(safe-area-inset-bottom)}
 .wrap{max-width:720px;margin:0 auto}
-header{text-align:center;padding:32px 0 16px}header img{display:block;margin:0 auto;height:auto}header .ic{width:120px}header .nm{width:210px;margin-top:6px}
+header{text-align:center;padding:26px 0 6px}header img{display:block;margin:0 auto;height:auto}header .ic{width:120px}header .nm{width:210px;margin-top:6px}
 h1{font-size:26px;margin:12px 0 4px;letter-spacing:.5px}h1 span{color:var(--red)}
 header p{margin:14px 0 0;color:var(--mut)}
 input{width:100%;margin:16px 0 12px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:16px}
@@ -29,8 +32,9 @@ input{width:100%;margin:16px 0 12px;padding:14px;border-radius:12px;border:1px s
 .empty{text-align:center;color:var(--mut);padding:40px 0}
 footer{border-top:1px solid var(--line);margin-top:24px;padding:20px 0 32px;color:var(--mut);font-size:13px;text-align:center}
 footer a{color:var(--txt)}
-</style></head><body><div class="wrap">
-<header><img class="ic" src="/logo-icon.png" alt="Naddys Studio"><img class="nm" src="/logo-name.png" alt=""><p>Science-backed fitness, made simple</p></header>
+</style></head><body><div class="tb"><nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links"><a href="/">Home</a><a href="/articles/">Articles</a><a href="/shop/" class="on">Shop</a><a href="/about/">About</a></div></nav></div>
+<div class="wrap">
+<header><h1 style="font-size:30px;margin:6px 0">My Fitness Picks</h1><p>Products I actually use, tested on my own body first.</p></header>
 <div class="trust"><b>Why you can trust these picks</b>I test every product on my own body first. After years of self-testing and research, I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div>
 <input id="q" type="search" placeholder="Search products..." aria-label="Search">
 <div class="chips" id="chips"></div>
