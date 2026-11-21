@@ -8,7 +8,7 @@ YT = "https://www.youtube.com/@Naddys_Studio"
 
 CSS = """:root{--bg:#09090b;--card:#141417;--line:#26262b;--red:#6ec4ff;--red2:#3a9de0;--txt:#f5f1ee;--mut:#a3a0a0}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1100px 520px at 50% -160px,#10324b,transparent),var(--bg);color:var(--txt);font:17px/1.65 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding:0 0 env(safe-area-inset-bottom);-webkit-font-smoothing:antialiased;overflow-x:clip}
-.wrap{max-width:1240px;margin:0 auto;padding:0 18px}.read{max-width:700px;margin:0 auto}a{color:var(--red)}img{max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding:0 18px}.read{max-width:760px;margin:0}a{color:var(--red)}img{max-width:100%}
 .topbar{position:sticky;top:0;z-index:20;background:rgba(9,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:8px;max-width:1240px;margin:0 auto}
 nav .brand{display:flex;align-items:center;gap:8px;text-decoration:none}nav .brand img.i{width:34px;height:auto}nav .brand img.n{width:104px;height:auto}
@@ -44,8 +44,8 @@ a.c b{display:block;font-size:18px;line-height:1.3;margin:4px 0 6px}a.c span.d{c
 .story img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 12%}
 .story:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,9,11,.1) 20%,rgba(9,9,11,.92));z-index:1}
 .story .tx{position:relative;z-index:2;padding:26px 22px;max-width:560px}.story h2{margin:0 0 8px}
-.abouthero{display:grid;gap:24px;padding:30px 0}@media(min-width:820px){.abouthero{grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}}
-.abouthero img{width:100%;height:auto;max-height:560px;object-fit:cover;object-position:50% 18%;border-radius:24px;border:1px solid var(--line);display:block}
+.abouthero{display:grid;gap:24px;padding:30px 0}@media(min-width:820px){.abouthero{grid-template-columns:420px 1fr;gap:56px;align-items:center;justify-content:start}}
+.abouthero img{width:100%;height:auto;max-height:520px;object-fit:cover;object-position:50% 18%;border-radius:24px;border:1px solid var(--line);display:block}
 .meta{color:var(--mut);font-size:14px}
 .cta{background:linear-gradient(135deg,#0f2a3d,#12161c);border:1px solid var(--line);border-radius:24px;padding:28px 22px;margin:40px 0;text-align:center}.cta h2{margin:0 0 6px}
 footer{border-top:1px solid var(--line);margin-top:50px;padding:24px 0 36px;color:var(--mut);font-size:13.5px;text-align:center}footer a{color:var(--txt)}footer p{margin:6px 0}
@@ -257,15 +257,16 @@ page("/", "Naddys Studio | Science-backed fitness, made simple",
 # ---------- ABOUT ----------
 page("/about/", "About Nadeem | Naddys Studio",
  "Corporate by day, fitness addict for life. How I lost 20 kg in 6 months and why I share simple, science-backed fitness.",
- f"""<section class="abouthero"><img src="/images/brand/naddy-gym.jpg" alt="Nadeem in the gym" width="540" height="955"><div><p class="eyebrow">About me</p><h1 style="margin-top:0">Hi, I am Nadeem.</h1>
+ f"""<section class="abouthero" style="padding:44px 0 10px"><img src="/images/brand/naddy-gym.jpg" alt="Nadeem in the gym" width="540" height="955"><div><p class="eyebrow">About me</p><h1 style="margin-top:0;font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:56px;letter-spacing:.5px">Hi, I am Nadeem.</h1>
 <p class="lead">Corporate by day, fitness addict for life.</p>
-<p>I lost 20 kg in 6 months and have built a six-pack twice. Doing it with a full-time desk job taught me that most fitness advice is either too complicated or too good to be true.</p></div></section>
-<div class="read">
-<h2>What this site is</h2>
-<p>A simple place for fitness information I would give a friend: what the research says, what I do myself, and the few products I trust. I share short videos on <a href="{IG}">Instagram</a> and <a href="{YT}">YouTube</a>, and the longer versions here.</p>
+<p>I lost 20 kg in 6 months and have built a six-pack twice. Doing it with a full-time desk job taught me that most fitness advice is either too complicated or too good to be true.</p>
+<p><a class="btn" href="/articles/">Read my articles</a><a class="btn o" href="/shop/">See my picks</a></p></div></section>
+<div class="artgrid"><div style="max-width:760px">
+<h2 style="margin-top:10px">What this site is</h2>
+<p>A simple place for fitness information I would give a friend: what the research says, what I do myself, and the few products I trust. I share short videos on <a href="{IG}">Instagram</a> and <a href="{YT}">YouTube</a>, and the longer versions here as articles.</p>
 <h2>How I choose products</h2>
-<p>I test every product on my own body first. I check the brand, look for fakes, and recommend only what I am willing to take myself. Some links go to Amazon and I earn a small commission if you buy, at no extra cost to you. <a href="/disclosure/">Read the full disclosure</a>.</p>
-<div class="cta"><h2>Where to find me</h2><a class="btn" href="{IG}">Instagram</a><a class="btn o" href="{YT}">YouTube</a><a class="btn o" href="/contact/">Contact</a></div></div>""", active="About")
+<p>I test every product on my own body first. I check the brand, look for fakes, and recommend only what I am willing to take myself. Some links go to Amazon and I earn a small commission if you buy, at no extra cost to you. <a href="/disclosure/">Read the full disclosure</a>.</p></div>
+<aside class="side"><div class="box"><b class="t">Find me online</b><a href="{IG}">Instagram @naddys_studio</a><br><a href="{YT}">YouTube @Naddys_Studio</a><br><a href="/contact/">Contact me</a></div></aside></div>""", active="About")
 
 # ---------- LEGAL ----------
 page("/disclosure/", "Disclosure | Naddys Studio", "How this site earns money and how I choose what to recommend.",
