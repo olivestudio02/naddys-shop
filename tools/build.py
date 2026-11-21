@@ -68,7 +68,7 @@ def page(path, title, desc, body, active="", extra_head="", article=None, og_tit
     nav = "".join(f'<a href="{h}" class="{"shop " if n=="Shop" else ""}{"on" if n==active else ""}">{n}</a>' for n,h in NAV)
     ld = ""
     if article:
-        ld = ('<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":%s,"description":%s,"datePublished":"%s","author":{"@type":"Person","name":"Naddy"},"publisher":{"@type":"Organization","name":"Naddys Studio","logo":{"@type":"ImageObject","url":"%s/logo.png"}},"mainEntityOfPage":"%s","image":"%s/og.png"}</script>'
+        ld = ('<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":%s,"description":%s,"datePublished":"%s","author":{"@type":"Person","name":"Nadeem Ahmed"},"publisher":{"@type":"Organization","name":"Naddys Studio","logo":{"@type":"ImageObject","url":"%s/logo.png"}},"mainEntityOfPage":"%s","image":"%s/og.png"}</script>'
               % (jsq(title), jsq(desc), article, SITE, url, SITE))
     out = f"""<!doctype html>
 <html lang="en"><head>
@@ -109,7 +109,7 @@ def article(slug, title, desc, date, body, tagline):
     path = f"/articles/{slug}/"
     ARTICLES.append((slug, title, tagline, date))
     inner = f"""<article class="read"><p class="eyebrow" style="margin-top:30px">Article</p><h1 style="margin-top:0">{html.escape(title)}</h1>
-<p class="meta">By Naddy &middot; {date_h(date)}</p>
+<p class="meta">By Nadeem &middot; {date_h(date)}</p>
 <div class="box"><b class="t">Quick note</b>This is general information from my own research and experience, not medical advice. Talk to your doctor before starting a new supplement, especially if you have a health condition or take medicines.</div>
 {body}
 <div class="box"><b class="t">Disclosure</b>Some links on this page go to Amazon. As an Amazon Associate I earn from qualifying purchases, at no extra cost to you. I only list products I would take myself. <a href="/disclosure/">More here</a>.</div>
@@ -196,7 +196,7 @@ page("/articles/", "Fitness Articles | Naddys Studio",
 # ---------- HOME ----------
 page("/", "Naddys Studio | Science-backed fitness, made simple",
  "Science-backed fitness, made simple. Articles on training, nutrition and supplements, plus the products I actually use.",
- f"""<section class="fb"><div class="ph"><img src="/images/brand/naddy-gym.jpg" alt="Naddy in the gym" width="1080" height="1910"></div>
+ f"""<section class="fb"><div class="ph"><img src="/images/brand/naddy-gym.jpg" alt="Nadeem in the gym" width="1080" height="1910"></div>
 <div class="in"><div class="tx"><p class="eyebrow">Naddys Studio</p>
 <h1>Science-backed fitness, <em>made simple</em></h1>
 <p class="sub">Corporate by day, fitness addict for life. I lost 20 kg in 6 months and built a six-pack twice, with a full-time desk job.</p>
@@ -206,15 +206,15 @@ page("/", "Naddys Studio | Science-backed fitness, made simple",
 <div class="pillars"><div><b>Training</b><span>Simple plans that fit a busy week.</span></div><div><b>Nutrition</b><span>What to eat, without a diet that ruins your life.</span></div><div><b>Supplements</b><span>What is worth it, and what is not.</span></div></div>
 <h2>Latest articles</h2><div class="cards two">{cards}</div>
 <p><a class="btn o" href="/articles/">All articles</a></p>
-<section class="abouthero" style="padding:20px 0"><img src="/images/brand/naddy-kitchen.jpg" alt="Naddy in the kitchen" loading="lazy" width="440" height="584"><div><p class="eyebrow">My story</p><h2 style="margin-top:0">No shortcuts. Just what works.</h2><p>I test everything on my own body first. If it does not work for a busy person, I will not tell you to do it.</p><a class="btn" href="/about/">Read my story</a></div></section>
+<section class="abouthero" style="padding:20px 0"><img src="/images/brand/naddy-kitchen.jpg" alt="Nadeem in the kitchen" loading="lazy" width="440" height="584"><div><p class="eyebrow">My story</p><h2 style="margin-top:0">No shortcuts. Just what works.</h2><p>I test everything on my own body first. If it does not work for a busy person, I will not tell you to do it.</p><a class="btn" href="/about/">Read my story</a></div></section>
 <div class="box"><b class="t">Why trust this site</b>I test every product on my own body first. I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div>
 <div class="cta"><h2>Follow along</h2><p class="mut">Short tips every day.</p><a class="btn" href="{IG}">Instagram</a><a class="btn o" href="{YT}">YouTube</a></div>
 <script>if(location.hash){{location.replace("/shop/"+location.hash)}}</script>""", active="Home")
 
 # ---------- ABOUT ----------
-page("/about/", "About Naddy | Naddys Studio",
+page("/about/", "About Nadeem | Naddys Studio",
  "Corporate by day, fitness addict for life. How I lost 20 kg in 6 months and why I share simple, science-backed fitness.",
- f"""<section class="abouthero"><img src="/images/brand/naddy-gym.jpg" alt="Naddy in the gym" width="540" height="955"><div><p class="eyebrow">About me</p><h1 style="margin-top:0">Hi, I am Naddy.</h1>
+ f"""<section class="abouthero"><img src="/images/brand/naddy-gym.jpg" alt="Nadeem in the gym" width="540" height="955"><div><p class="eyebrow">About me</p><h1 style="margin-top:0">Hi, I am Nadeem.</h1>
 <p class="lead">Corporate by day, fitness addict for life.</p>
 <p>I lost 20 kg in 6 months and have built a six-pack twice. Doing it with a full-time desk job taught me that most fitness advice is either too complicated or too good to be true.</p></div></section>
 <div class="read">
