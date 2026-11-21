@@ -10,6 +10,7 @@ CSS = """:root{--bg:#09090b;--card:#141417;--line:#26262b;--red:#6ec4ff;--red2:#
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1100px 520px at 50% -160px,#10324b,transparent),var(--bg);color:var(--txt);font:17px/1.65 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding:0 0 env(safe-area-inset-bottom);-webkit-font-smoothing:antialiased;overflow-x:clip}
 .wrap{max-width:1240px;margin:0 auto;padding:0 18px}.follow{display:grid;grid-template-columns:1fr;gap:16px;max-width:900px;margin:0 auto}@media(min-width:760px){.follow{grid-template-columns:1fr 1fr}}
 .fcol{background:#111114;border:1px solid #26262b;border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:10px;align-items:flex-start;min-width:0}.fcol h3{margin:0;font-size:22px}.fcol p{margin:0 0 6px;color:var(--mut);line-height:1.55}.fk{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:800;color:#6ec4ff}
+.fb .sub3{border-left:3px solid #6ec4ff;padding:2px 0 2px 14px;margin:16px 0 22px;color:#f5f1ee;line-height:1.55;font-size:16px;max-width:44ch}.fb .sub3 b{display:block;color:#6ec4ff;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}.fb .sub3 a{color:#6ec4ff;font-weight:700}
 .afig{margin:22px 0}.afig img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;display:block;border:1px solid #26262b}.afig.phero{margin-top:0}
 .intoc .th{font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase;color:#6ec4ff}.intoc{background:#111114;border:1px solid #26262b;border-radius:14px;padding:16px 20px;margin:18px 0}.intoc ol{margin:8px 0 0 18px;padding:0}.intoc li{margin:4px 0}.intoc a{color:#6ec4ff}
 .read{max-width:760px;margin:0}a{color:var(--red)}img{max-width:100%}
@@ -273,7 +274,8 @@ page("/", "Naddys Studio | Science-backed fitness, made simple",
 <div class="in"><div class="tx"><p class="eyebrow">Naddys Studio</p>
 <h1>Science-backed fitness, <em>made simple</em></h1>
 <p class="sub"><b>Hi, I am Nadeem.</b> Corporate by day, fitness addict for life. I lost 20 kg in 6 months and built a six-pack twice, all while working a full-time desk job.</p>
-<p class="sub2">No magic and no hype. I read the research, test it on my own body, and share only what works for busy people. Here you will find simple guides on training, food and supplements, plus the products I actually use. New science-backed tips every day on Instagram, and in-depth videos every week on YouTube.</p>
+<p class="sub2">No magic and no hype. I read the research, test it on my own body, and share only what works for busy people. Here you will find simple guides on training, food and supplements, plus the products I actually use.</p>
+<p class="sub3"><b>New content on a steady schedule.</b> Follow me on <a href="{IG}" rel="noopener">Instagram</a> for a science-backed tip every day, and subscribe on <a href="{YT}" rel="noopener">YouTube</a> for in-depth videos every week.</p>
 <p><a class="btn" href="/articles/">Start reading</a><a class="btn o" href="/shop/">See my picks</a></p></div></div></section>
 <div class="band blue"><div class="bi"><div class="stats"><div><b>20 kg</b><span>lost in 6 months</span></div><div><b>2x</b><span>six-pack built</span></div><div><b>9 to 5</b><span>desk job, no excuses</span></div></div></div></div>
 <div class="band alt"><div class="bi"><h2>Latest articles</h2><div class="cards three">{cards[:0]}{home_cards}</div>
