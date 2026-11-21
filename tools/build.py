@@ -131,7 +131,7 @@ def jsq(s):
 
 ARTICLES = []
 
-COVERS={"magnesium-for-sleep-and-recovery":"/images/magnesium.jpg","how-to-choose-a-whey-protein":"/images/whey-isolate.jpg"}
+COVERS={"magnesium-for-sleep-and-recovery":"/images/topics/magnesium-sleep.jpg","how-to-choose-a-whey-protein":"/images/brand/naddy-kitchen.jpg","fasted-morning-walk-fat-loss":"/images/topics/fasted-walk.jpg","visceral-fat-belly-fat-explained":"/images/topics/visceral-fat.jpg","eat-in-the-right-order-blood-sugar":"/images/topics/food-order.jpg","why-fat-loss-stopped-plateau":"/images/topics/plateau.jpg","5-habits-stay-lean-full-time-job":"/images/topics/habits.jpg","4-things-wrecking-sleep-and-fat-loss":"/images/topics/sleep.jpg","cardio-or-weights-for-fat-loss":"/images/topics/cardio-weights.jpg","festive-season-without-gaining-fat":"/images/topics/festive.jpg","intermittent-fasting-does-it-work":"/images/topics/fasting.jpg"}
 CATS={}
 def pagehead(eyebrow, title, lead="", meta=""):
     return f'<div class="pagehead"><div class="bi"><p class="eyebrow">{eyebrow}</p><h1>{html.escape(title)}</h1>' + (f'<p class="lead">{lead}</p>' if lead else "") + (f'<p class="meta">{meta}</p>' if meta else "") + '</div></div>'
