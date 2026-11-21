@@ -109,6 +109,7 @@ def page(path, title, desc, body, active="", extra_head="", article=None, og_tit
 <meta property="og:url" content="{url}"><meta property="og:image" content="{SITE}/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<meta name="p:domain_verify" content="bf143660978779c0032cf974eb4e7fb2"/>
 <!-- GOOGLE_SITE_VERIFICATION -->
 {ld}{extra_head}
 <style>{CSS}</style></head><body><div class="topbar"><div class="wrap"><nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links" style="margin-left:auto">{nav}</div>{SOC}</nav></div></div>
