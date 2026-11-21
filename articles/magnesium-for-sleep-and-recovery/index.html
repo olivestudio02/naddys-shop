@@ -20,7 +20,8 @@
 nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:8px;max-width:1240px;margin:0 auto}
 nav .brand{display:flex;align-items:center;gap:8px;text-decoration:none}nav .brand img.i{width:34px;height:auto}nav .brand img.n{width:104px;height:auto}
 nav .links{display:flex;gap:6px;font-size:15px;align-items:center}nav .links a{color:var(--txt);text-decoration:none;padding:7px 11px;border-radius:999px}nav .links a.on{color:#06121a;background:var(--red);font-weight:700}
-@media(max-width:560px){nav .brand img.n{display:none}nav .links a{padding:7px 9px}}
+@media(max-width:560px){nav .brand img.n{display:none}nav .links a{padding:7px 8px;font-size:14px}nav .soc{margin-left:2px}nav .soc a{width:30px;height:30px}nav .soc svg{width:16px;height:16px}nav .links{gap:2px}}
+nav .soc{display:flex;gap:4px;margin-left:6px}nav .soc a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:var(--txt);border:1px solid var(--line);padding:0}nav .soc a:hover{color:var(--red);border-color:var(--red)}
 nav .links a.shop{border:1px solid var(--red);color:var(--red)}nav .links a.shop.on{color:#06121a}
 h1{font-size:34px;line-height:1.15;margin:28px 0 10px;letter-spacing:-.5px}h2{font-size:26px;line-height:1.2;margin:40px 0 10px;letter-spacing:-.3px}h3{font-size:19px;margin:22px 0 4px}
 p,li{color:#e9e4e0}.mut{color:var(--mut)}.lead{font-size:19px;color:var(--txt)}
@@ -38,7 +39,7 @@ p,li{color:#e9e4e0}.mut{color:var(--mut)}.lead{font-size:19px;color:var(--txt)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 6px}
 .stats div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 8px;text-align:center}
 .stats b{display:block;font-size:26px;color:var(--red);line-height:1.1}.stats span{font-size:12.5px;color:var(--mut)}
-.cards{display:grid;gap:16px;margin:18px 0}@media(min-width:700px){.cards.two{grid-template-columns:1fr 1fr}.cards.three{grid-template-columns:repeat(3,1fr)}}
+.cards{display:grid;gap:16px;margin:18px 0}@media(min-width:700px){.cards.two{grid-template-columns:1fr 1fr}.cards.three{grid-template-columns:1fr 1fr}}@media(min-width:1000px){.cards.three{grid-template-columns:repeat(3,1fr)}}
 a.c{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:var(--txt);transition:transform .15s,border-color .15s}
 a.c:hover{transform:translateY(-3px);border-color:var(--red)}
 a.c .cv{aspect-ratio:16/10;background:#1b1b20 center/cover no-repeat}a.c .cb{padding:14px 16px 16px}
@@ -72,13 +73,28 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:24px 0 36px;colo
 .band.alt{background:#101014;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .band.deep{background:#0d0d10;border-top:1px solid var(--line)}
 .band h2:first-child{margin-top:0}
-@media(min-width:1000px){a.c .cv{aspect-ratio:16/8}.pillars{gap:18px}}
+
+.pagehead{margin:0 calc(50% - 50vw);background:radial-gradient(900px 300px at 80% -80px,#12384f,transparent),#000;padding:46px 0 38px;border-bottom:1px solid var(--line)}
+.pagehead .bi{max-width:1240px;margin:0 auto;padding:0 18px}
+.pagehead h1{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;font-size:40px;line-height:1.08;letter-spacing:.5px;margin:0 0 10px;max-width:22ch}
+.pagehead .lead{margin:0;max-width:60ch;color:#d8d2ce}.pagehead .meta{margin:12px 0 0}
+@media(min-width:820px){.pagehead{padding:70px 0 56px}.pagehead h1{font-size:64px}}
+.artgrid{display:grid;gap:36px;padding:30px 0 10px}@media(min-width:1000px){.artgrid{grid-template-columns:minmax(0,1fr) 340px;gap:56px}}
+.side{display:grid;gap:16px;align-content:start}@media(min-width:1000px){.side{position:sticky;top:86px}}
+.side .box{margin:0}.side img.me{width:100%;max-height:260px;object-fit:cover;object-position:50% 12%;border-radius:14px;display:block;margin-bottom:10px}
+.side ul{margin:6px 0 0;padding-left:18px}.side li{font-size:15px;margin:6px 0}
+.chipsrow{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}.chipb{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:15px;cursor:pointer;font-family:inherit}.chipb.on{background:var(--red);border-color:var(--red);color:#06121a;font-weight:700}
+a.c .cv.g{display:flex;align-items:flex-end;padding:14px 16px;font-family:Anton,Impact,sans-serif;font-size:34px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.92);background-image:linear-gradient(135deg,#0f2a3d,#0b0b0e)}
+.shopgrid{display:grid;gap:16px;margin:16px 0 30px}@media(min-width:620px){.shopgrid{grid-template-columns:1fr 1fr}}@media(min-width:1000px){.shopgrid{grid-template-columns:repeat(3,1fr)}}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}.pcard.hl{border-color:var(--red);box-shadow:0 0 0 2px var(--red)}
+.pcard .img{aspect-ratio:1/1;background:#1d1d20 center/cover no-repeat;display:flex;align-items:center;justify-content:center;font-size:44px}.pcard .b{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pcard h3{margin:0;font-size:17px;line-height:1.3}.pcard p{margin:0;color:var(--mut);font-size:14.5px;flex:1}.pcard .btn{text-align:center;display:block;margin:8px 0 0}
+.searchi{width:100%;margin:6px 0 14px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:16px}
 article.read h2{margin-top:34px}article.read p,article.read li{font-size:18px}
-</style></head><body><div class="topbar"><div class="wrap"><nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links"><a href="/" class="">Home</a><a href="/articles/" class="on">Articles</a><a href="/shop/" class="shop ">Shop</a><a href="/about/" class="">About</a></div></nav></div></div>
+</style></head><body><div class="topbar"><div class="wrap"><nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links" style="margin-left:auto"><a href="/" class="">Home</a><a href="/shop/" class="shop ">Shop</a><a href="/articles/" class="on">Articles</a><a href="/about/" class="">About</a></div><div class="soc"><a href="https://www.instagram.com/naddys_studio/" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a><a href="https://www.youtube.com/@Naddys_Studio" aria-label="YouTube" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a></div></nav></div></div>
 <div class="wrap"><main>
-<article class="read"><p class="eyebrow" style="margin-top:30px">Article</p><h1 style="margin-top:0">Magnesium for Sleep and Recovery: What It Does and How to Choose One</h1>
-<p class="meta">By Nadeem &middot; 21 November 2026</p>
-<div class="box"><b class="t">Quick note</b>This is general information from my own research and experience, not medical advice. Talk to your doctor before starting a new supplement, especially if you have a health condition or take medicines.</div>
+<div class="pagehead"><div class="bi"><p class="eyebrow">Supplements</p><h1>Magnesium for Sleep and Recovery: What It Does and How to Choose One</h1><p class="meta">By Nadeem &middot; 21 November 2026</p></div></div><div class="artgrid"><article class="read" style="margin:0;max-width:760px">
+<div class="box" style="margin-top:0"><b class="t">Quick note</b>This is general information from my own research and experience, not medical advice. Talk to your doctor before changing your diet, starting a supplement or a new exercise plan, especially if you have a health condition or take medicines.</div>
 
 <p class="lead">If you train hard, sit at a desk all day and still wake up feeling flat, magnesium is one of the cheapest things worth understanding. Here is what it actually does, what the research does and does not say, and how I choose one.</p>
 <h2>What magnesium does in your body</h2>
@@ -108,8 +124,10 @@ article.read h2{margin-top:34px}article.read p,article.read li{font-size:18px}
 <h2>The short version</h2>
 <p>Eat magnesium-rich food first. If you still want a supplement, choose a gentle form like glycinate, check the label, give it a few weeks, and keep your expectations realistic. Good sleep still comes from the basics: a regular bedtime, a dark room, and no phone in your face.</p>
 
-<div class="box"><b class="t">Disclosure</b>Some links on this page go to Amazon. As an Amazon Associate I earn from qualifying purchases, at no extra cost to you. I only list products I would take myself. <a href="/disclosure/">More here</a>.</div>
-<p><a class="btn o" href="/articles/">More articles</a> <a class="btn" href="/shop/">See my picks</a></p></article>
+<div class="box"><b class="t">Disclosure</b>Some links on this site go to Amazon. As an Amazon Associate I earn from qualifying purchases, at no extra cost to you. I only list products I would take myself. <a href="/disclosure/">More here</a>.</div>
+<p><a class="btn o" href="/articles/">More articles</a> <a class="btn" href="/shop/">See my picks</a></p></article><aside class="side"><div class="box"><img class="me" src="/images/brand/naddy-gym.jpg" alt="Nadeem" loading="lazy"><b class="t">About Nadeem</b>Corporate by day, fitness addict for life. I lost 20 kg in 6 months and test everything on my own body first. <a href="/about/">More about me</a></div>
+<div class="box"><b class="t">My picks</b>The products I actually use, with a short note on why. <a href="/shop/">See the shop</a></div>
+<div class="box"><b class="t">More articles</b><ul><li><a href="/articles/how-to-choose-a-whey-protein/">How to Choose a Whey Protein (Without Getting Fooled)</a></li></ul></div></aside></div>
 </main>
 <footer>
 <p>As an Amazon Associate I earn from qualifying purchases.</p>

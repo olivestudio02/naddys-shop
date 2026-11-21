@@ -13,7 +13,8 @@ CSS = """:root{--bg:#09090b;--card:#141417;--line:#26262b;--red:#6ec4ff;--red2:#
 nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:8px;max-width:1240px;margin:0 auto}
 nav .brand{display:flex;align-items:center;gap:8px;text-decoration:none}nav .brand img.i{width:34px;height:auto}nav .brand img.n{width:104px;height:auto}
 nav .links{display:flex;gap:6px;font-size:15px;align-items:center}nav .links a{color:var(--txt);text-decoration:none;padding:7px 11px;border-radius:999px}nav .links a.on{color:#06121a;background:var(--red);font-weight:700}
-@media(max-width:560px){nav .brand img.n{display:none}nav .links a{padding:7px 9px}}
+@media(max-width:560px){nav .brand img.n{display:none}nav .links a{padding:7px 8px;font-size:14px}nav .soc{margin-left:2px}nav .soc a{width:30px;height:30px}nav .soc svg{width:16px;height:16px}nav .links{gap:2px}}
+nav .soc{display:flex;gap:4px;margin-left:6px}nav .soc a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;color:var(--txt);border:1px solid var(--line);padding:0}nav .soc a:hover{color:var(--red);border-color:var(--red)}
 nav .links a.shop{border:1px solid var(--red);color:var(--red)}nav .links a.shop.on{color:#06121a}
 h1{font-size:34px;line-height:1.15;margin:28px 0 10px;letter-spacing:-.5px}h2{font-size:26px;line-height:1.2;margin:40px 0 10px;letter-spacing:-.3px}h3{font-size:19px;margin:22px 0 4px}
 p,li{color:#e9e4e0}.mut{color:var(--mut)}.lead{font-size:19px;color:var(--txt)}
@@ -31,7 +32,7 @@ p,li{color:#e9e4e0}.mut{color:var(--mut)}.lead{font-size:19px;color:var(--txt)}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 6px}
 .stats div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 8px;text-align:center}
 .stats b{display:block;font-size:26px;color:var(--red);line-height:1.1}.stats span{font-size:12.5px;color:var(--mut)}
-.cards{display:grid;gap:16px;margin:18px 0}@media(min-width:700px){.cards.two{grid-template-columns:1fr 1fr}.cards.three{grid-template-columns:repeat(3,1fr)}}
+.cards{display:grid;gap:16px;margin:18px 0}@media(min-width:700px){.cards.two{grid-template-columns:1fr 1fr}.cards.three{grid-template-columns:1fr 1fr}}@media(min-width:1000px){.cards.three{grid-template-columns:repeat(3,1fr)}}
 a.c{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;text-decoration:none;color:var(--txt);transition:transform .15s,border-color .15s}
 a.c:hover{transform:translateY(-3px);border-color:var(--red)}
 a.c .cv{aspect-ratio:16/10;background:#1b1b20 center/cover no-repeat}a.c .cb{padding:14px 16px 16px}
@@ -65,11 +66,28 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:24px 0 36px;colo
 .band.alt{background:#101014;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .band.deep{background:#0d0d10;border-top:1px solid var(--line)}
 .band h2:first-child{margin-top:0}
-@media(min-width:1000px){a.c .cv{aspect-ratio:16/8}.pillars{gap:18px}}
+
+.pagehead{margin:0 calc(50% - 50vw);background:radial-gradient(900px 300px at 80% -80px,#12384f,transparent),#000;padding:46px 0 38px;border-bottom:1px solid var(--line)}
+.pagehead .bi{max-width:1240px;margin:0 auto;padding:0 18px}
+.pagehead h1{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;font-size:40px;line-height:1.08;letter-spacing:.5px;margin:0 0 10px;max-width:22ch}
+.pagehead .lead{margin:0;max-width:60ch;color:#d8d2ce}.pagehead .meta{margin:12px 0 0}
+@media(min-width:820px){.pagehead{padding:70px 0 56px}.pagehead h1{font-size:64px}}
+.artgrid{display:grid;gap:36px;padding:30px 0 10px}@media(min-width:1000px){.artgrid{grid-template-columns:minmax(0,1fr) 340px;gap:56px}}
+.side{display:grid;gap:16px;align-content:start}@media(min-width:1000px){.side{position:sticky;top:86px}}
+.side .box{margin:0}.side img.me{width:100%;max-height:260px;object-fit:cover;object-position:50% 12%;border-radius:14px;display:block;margin-bottom:10px}
+.side ul{margin:6px 0 0;padding-left:18px}.side li{font-size:15px;margin:6px 0}
+.chipsrow{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}.chipb{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:15px;cursor:pointer;font-family:inherit}.chipb.on{background:var(--red);border-color:var(--red);color:#06121a;font-weight:700}
+a.c .cv.g{display:flex;align-items:flex-end;padding:14px 16px;font-family:Anton,Impact,sans-serif;font-size:34px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.92);background-image:linear-gradient(135deg,#0f2a3d,#0b0b0e)}
+.shopgrid{display:grid;gap:16px;margin:16px 0 30px}@media(min-width:620px){.shopgrid{grid-template-columns:1fr 1fr}}@media(min-width:1000px){.shopgrid{grid-template-columns:repeat(3,1fr)}}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}.pcard.hl{border-color:var(--red);box-shadow:0 0 0 2px var(--red)}
+.pcard .img{aspect-ratio:1/1;background:#1d1d20 center/cover no-repeat;display:flex;align-items:center;justify-content:center;font-size:44px}.pcard .b{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pcard h3{margin:0;font-size:17px;line-height:1.3}.pcard p{margin:0;color:var(--mut);font-size:14.5px;flex:1}.pcard .btn{text-align:center;display:block;margin:8px 0 0}
+.searchi{width:100%;margin:6px 0 14px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:16px}
 article.read h2{margin-top:34px}article.read p,article.read li{font-size:18px}
 """
 
-NAV = [("Home","/"),("Articles","/articles/"),("Shop","/shop/"),("About","/about/")]
+SOC = f'''<div class="soc"><a href="{IG}" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a><a href="{YT}" aria-label="YouTube" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg></a></div>'''
+NAV = [("Home","/"),("Shop","/shop/"),("Articles","/articles/"),("About","/about/")]
 
 def page(path, title, desc, body, active="", extra_head="", article=None, og_title=None):
     url = SITE + path
@@ -93,7 +111,7 @@ def page(path, title, desc, body, active="", extra_head="", article=None, og_tit
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 <!-- GOOGLE_SITE_VERIFICATION -->
 {ld}{extra_head}
-<style>{CSS}</style></head><body><div class="topbar"><div class="wrap"><nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links">{nav}</div></nav></div></div>
+<style>{CSS}</style></head><body><div class="topbar"><div class="wrap"><nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links" style="margin-left:auto">{nav}</div>{SOC}</nav></div></div>
 <div class="wrap"><main>
 {"<div class=read>"+body+"</div>" if path in ("/disclosure/","/privacy/","/contact/") else body}
 </main>
@@ -113,16 +131,24 @@ def jsq(s):
 ARTICLES = []
 
 COVERS={"magnesium-for-sleep-and-recovery":"/images/magnesium.jpg","how-to-choose-a-whey-protein":"/images/whey-isolate.jpg"}
-def article(slug, title, desc, date, body, tagline):
+CATS={}
+def pagehead(eyebrow, title, lead="", meta=""):
+    return f'<div class="pagehead"><div class="bi"><p class="eyebrow">{eyebrow}</p><h1>{html.escape(title)}</h1>' + (f'<p class="lead">{lead}</p>' if lead else "") + (f'<p class="meta">{meta}</p>' if meta else "") + '</div></div>'
+def sidebar(cur=None):
+    more = "".join(f'<li><a href="/articles/{a_[0]}/">{html.escape(a_[1])}</a></li>' for a_ in ARTICLES if a_[0]!=cur)[:6000]
+    return f'''<aside class="side"><div class="box"><img class="me" src="/images/brand/naddy-gym.jpg" alt="Nadeem" loading="lazy"><b class="t">About Nadeem</b>Corporate by day, fitness addict for life. I lost 20 kg in 6 months and test everything on my own body first. <a href="/about/">More about me</a></div>
+<div class="box"><b class="t">My picks</b>The products I actually use, with a short note on why. <a href="/shop/">See the shop</a></div>
+<div class="box"><b class="t">More articles</b><ul>{more}</ul></div></aside>'''
+def article(slug, title, desc, date, body, tagline, cat="Fitness"):
     path = f"/articles/{slug}/"
-    ARTICLES.append((slug, title, tagline, date))
-    inner = f"""<article class="read"><p class="eyebrow" style="margin-top:30px">Article</p><h1 style="margin-top:0">{html.escape(title)}</h1>
-<p class="meta">By Nadeem &middot; {date_h(date)}</p>
-<div class="box"><b class="t">Quick note</b>This is general information from my own research and experience, not medical advice. Talk to your doctor before starting a new supplement, especially if you have a health condition or take medicines.</div>
+    ARTICLES.append((slug, title, tagline, date, cat))
+    inner = pagehead(cat, title, "", f"By Nadeem &middot; {date_h(date)}") + f"""<div class="artgrid"><article class="read" style="margin:0;max-width:760px">
+<div class="box" style="margin-top:0"><b class="t">Quick note</b>This is general information from my own research and experience, not medical advice. Talk to your doctor before changing your diet, starting a supplement or a new exercise plan, especially if you have a health condition or take medicines.</div>
 {body}
-<div class="box"><b class="t">Disclosure</b>Some links on this page go to Amazon. As an Amazon Associate I earn from qualifying purchases, at no extra cost to you. I only list products I would take myself. <a href="/disclosure/">More here</a>.</div>
-<p><a class="btn o" href="/articles/">More articles</a> <a class="btn" href="/shop/">See my picks</a></p></article>"""
-    page(path, title + " | Naddys Studio", desc, inner, active="Articles", article=date)
+<div class="box"><b class="t">Disclosure</b>Some links on this site go to Amazon. As an Amazon Associate I earn from qualifying purchases, at no extra cost to you. I only list products I would take myself. <a href="/disclosure/">More here</a>.</div>
+<p><a class="btn o" href="/articles/">More articles</a> <a class="btn" href="/shop/">See my picks</a></p></article>@@SIDE@@</div>"""
+    ARTPAGES.append((path, title + " | Naddys Studio", desc, inner, date, slug))
+ARTPAGES = []
 
 def date_h(d):
     import datetime; return datetime.date.fromisoformat(d).strftime("%-d %B %Y")
@@ -159,7 +185,7 @@ article("magnesium-for-sleep-and-recovery",
 <div class="box" id="my-pick"><b class="t">The one I use</b>I take a magnesium bisglycinate supplement in the evening. You can see it with my other picks on the shop page: <a href="/shop/#magnesium">my magnesium pick</a>.</div>
 <h2>The short version</h2>
 <p>Eat magnesium-rich food first. If you still want a supplement, choose a gentle form like glycinate, check the label, give it a few weeks, and keep your expectations realistic. Good sleep still comes from the basics: a regular bedtime, a dark room, and no phone in your face.</p>
-""", "What it does for sleep and recovery, which form to pick, and what the research really says.")
+""", "What it does for sleep and recovery, which form to pick, and what the research really says.", "Supplements")
 
 # ---------- ARTICLE 2 ----------
 article("how-to-choose-a-whey-protein",
@@ -191,16 +217,27 @@ article("how-to-choose-a-whey-protein",
 <div class="box"><b class="t">What I use</b>I have listed the whey options I trust, with a short note on why, on my shop page: <a href="/shop/">see my protein picks</a>.</div>
 <h2>The short version</h2>
 <p>Pick a whey where protein is first on the label, the protein per scoop is solid, the brand shows testing, and you buy from a real seller. Match isolate or concentrate to your stomach and budget, then stop overthinking it and train.</p>
-""", "Concentrate, isolate or blend? Four label checks that matter, and how to avoid fake tubs.")
+""", "Concentrate, isolate or blend? Four label checks that matter, and how to avoid fake tubs.", "Supplements")
 
-# ---------- ARTICLES INDEX ----------
-def card(s_,t,g,d):
-    return f'<a class="c" href="/articles/{s_}/"><div class="cv" style="background-image:url({COVERS[s_]})"></div><div class="cb"><span class="tag">{date_h(d)}</span><b>{html.escape(t)}</b><span class="d">{html.escape(g)}</span></div></a>'
+from articles_data import MORE
+for _a in MORE:
+    article(_a["slug"],_a["title"],_a["desc"],_a["date"],_a["body"],_a["tagline"],_a.get("cat","Fitness"))
+# flush article pages (sidebar needs the full list)
+for (path,title,desc,inner,date,slug) in ARTPAGES:
+    page(path, title, desc, inner.replace("@@SIDE@@", sidebar(slug)), active="Articles", article=date)
+ARTICLES.sort(key=lambda a_: a_[3], reverse=True)
+def card(s_,t,g,d,cat):
+    cv = f'<div class="cv" style="background-image:url({COVERS[s_]})"></div>' if s_ in COVERS else f'<div class="cv g">{html.escape(cat)}</div>'
+    return f'<a class="c" data-cat="{html.escape(cat)}" href="/articles/{s_}/">{cv}<div class="cb"><span class="tag">{html.escape(cat)} &middot; {date_h(d)}</span><b>{html.escape(t)}</b><span class="d">{html.escape(g)}</span></div></a>'
 cards = "".join(card(*a_) for a_ in ARTICLES)
+cats = sorted({a_[4] for a_ in ARTICLES})
+chips = '<button class="chipb on" data-c="All">All</button>' + "".join(f'<button class="chipb" data-c="{html.escape(c)}">{html.escape(c)}</button>' for c in cats)
 page("/articles/", "Fitness Articles | Naddys Studio",
- "Simple, research-backed fitness articles on supplements, nutrition and training. New articles every week.",
- f'<p class="eyebrow" style="margin-top:34px">Articles</p><h1 style="margin-top:0">Simple, science-backed fitness</h1><p class="lead">New articles every week. No hype, no fake promises.</p><div class="cards two">{cards}</div>', active="Articles")
+ "Simple, research-backed fitness articles on nutrition, training, sleep and supplements. New articles every week.",
+ pagehead("Articles","Simple, science-backed fitness","New articles every week. No hype, no fake promises.") + f'''<div style="padding:26px 0"><div class="chipsrow" id="ch">{chips}</div><div class="cards three" id="cl">{cards}</div></div>
+<script>document.querySelectorAll("#ch .chipb").forEach(function(b){{b.onclick=function(){{document.querySelectorAll("#ch .chipb").forEach(function(x){{x.classList.toggle("on",x===b)}});document.querySelectorAll("#cl .c").forEach(function(c){{c.style.display=(b.dataset.c=="All"||c.dataset.cat==b.dataset.c)?"":"none"}})}}}});</script>''', active="Articles")
 
+home_cards = "".join(card(*a_) for a_ in ARTICLES[:3])
 # ---------- HOME ----------
 page("/", "Naddys Studio | Science-backed fitness, made simple",
  "Science-backed fitness, made simple. Articles on training, nutrition and supplements, plus the products I actually use.",
@@ -211,9 +248,7 @@ page("/", "Naddys Studio | Science-backed fitness, made simple",
 <p class="sub2">No magic and no hype. I read the research, test it on my own body, and share only what works for busy people. Here you will find simple guides on training, food and supplements, plus the products I actually use.</p>
 <p><a class="btn" href="/articles/">Start reading</a><a class="btn o" href="/shop/">See my picks</a></p></div></div></section>
 <div class="band blue"><div class="bi"><div class="stats"><div><b>20 kg</b><span>lost in 6 months</span></div><div><b>2x</b><span>six-pack built</span></div><div><b>9 to 5</b><span>desk job, no excuses</span></div></div></div></div>
-<div class="band"><div class="bi"><h2>Start here</h2>
-<div class="pillars"><div><b>Training</b><span>Simple plans that fit a busy week.</span></div><div><b>Nutrition</b><span>What to eat, without a diet that ruins your life.</span></div><div><b>Supplements</b><span>What is worth it, and what is not.</span></div></div></div></div>
-<div class="band alt"><div class="bi"><h2>Latest articles</h2><div class="cards two">{cards}</div>
+<div class="band alt"><div class="bi"><h2>Latest articles</h2><div class="cards three">{cards[:0]}{home_cards}</div>
 <p><a class="btn o" href="/articles/">All articles</a></p></div></div>
 <div class="band"><div class="bi"><section class="abouthero" style="padding:0"><img src="/images/brand/naddy-kitchen.jpg" alt="Nadeem in the kitchen" loading="lazy" width="440" height="584"><div><p class="eyebrow">My story</p><h2 style="margin-top:0">No shortcuts. Just what works.</h2><p class="lead">I test everything on my own body first. If it does not work for a busy person, I will not tell you to do it.</p><div class="box"><b class="t">Why trust this site</b>I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div><a class="btn" href="/about/">Read my story</a></div></section></div></div>
 <div class="band deep"><div class="bi" style="text-align:center"><h2>Follow along</h2><p class="mut">Short tips every day.</p><a class="btn" href="{IG}">Instagram</a><a class="btn o" href="{YT}">YouTube</a></div></div>
@@ -251,13 +286,29 @@ page("/contact/", "Contact | Naddys Studio", "How to reach Naddys Studio: Instag
 <a class="c" href="mailto:naddy.mgt@gmail.com"><div class="cb"><span class="tag">Email</span><b>naddy.mgt@gmail.com</b><span class="d">For longer questions</span></div></a></div>
 <p class="mut">You can also leave a comment on my <a href="{YT}">YouTube</a> videos.</p>""")
 
-# ---------- SHOP (from old index) ----------
-old = open(os.path.join(ROOT, "tools", "shop_template.html")).read()
-os.makedirs(os.path.join(ROOT, "shop"), exist_ok=True)
-open(os.path.join(ROOT, "shop", "index.html"), "w").write(old)
+# ---------- SHOP ----------
+SHOPJS = """<script>
+const ICON={Protein:"💪",Supplements:"💊","Fitness accessories":"🏋️"};let all=[],cat="All";
+const $=id=>document.getElementById(id);
+function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function render(){const q=$("q").value.toLowerCase();
+ const list=all.filter(p=>(cat=="All"||p.category==cat)&&(p.title+" "+p.note).toLowerCase().includes(q));
+ $("grid").innerHTML=list.length?list.map(p=>`<div class="pcard" id="${esc(p.id||p.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""))}"><div class="img" style="${p.image?`background-image:url('/${esc(p.image)}')`:""}">${p.image?"":ICON[p.category]||"🛒"}</div><div class="b"><span class="tag">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.note)}</p><a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon</a></div></div>`).join(""):`<p class="mut">No products yet. Check back soon!</p>`;}
+function chips(){const cs=["All",...new Set(all.map(p=>p.category))];
+ $("chips").innerHTML=cs.map(c=>`<button class="chipb ${c==cat?"on":""}" data-c="${c}">${c}</button>`).join("");
+ document.querySelectorAll("#chips .chipb").forEach(b=>b.onclick=()=>{cat=b.dataset.c;chips();render()})}
+$("q").oninput=render;
+fetch("/products.json").then(r=>r.json()).then(d=>{
+ all=d.products.filter(p=>p.enabled&&p.url&&p.url.startsWith("http"));
+ if(new URLSearchParams(location.search).has("preview"))all=d.products;
+ chips();render();const k=location.hash.slice(1);if(k){const e=document.getElementById(k);if(e){e.classList.add("hl");e.scrollIntoView({block:"center"})}}}).catch(()=>{$("grid").innerHTML='<p class="mut">Loading failed.</p>'});
+</script>"""
+page("/shop/", "My Fitness Picks | Naddys Studio Shop", "Fitness products I actually use, tested on my own body first. Protein, supplements and gym gear.",
+ pagehead("Shop","My fitness picks","Products I actually use, tested on my own body first.") + """<div style="padding:26px 0"><div class="box" style="margin-top:0"><b class="t">Why you can trust these picks</b>I test every product on my own body first. After years of self-testing and research, I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div>
+<input class="searchi" id="q" type="search" placeholder="Search products..." aria-label="Search"><div class="chipsrow" id="chips"></div><div class="shopgrid" id="grid"></div></div>""" + SHOPJS, active="Shop")
 
 # ---------- sitemap / robots ----------
-urls = ["/", "/articles/", "/shop/", "/about/", "/disclosure/", "/privacy/", "/contact/"] + [f"/articles/{s}/" for s,_,_,_ in ARTICLES]
+urls = ["/", "/articles/", "/shop/", "/about/", "/disclosure/", "/privacy/", "/contact/"] + [f"/articles/{s}/" for s,_,_,_,_ in ARTICLES]
 open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{SITE}{u}</loc></url>\n" for u in urls) + "</urlset>\n")
 open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
 print("built", len(urls), "urls")
