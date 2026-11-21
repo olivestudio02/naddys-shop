@@ -56,8 +56,8 @@ footer{border-top:1px solid var(--line);margin-top:50px;padding:24px 0 36px;colo
 .fb .tx{padding:0 0 30px;margin-top:-110px;position:relative}
 .fb h1{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;font-size:46px;line-height:1.04;letter-spacing:.5px;margin:0 0 12px}
 .fb h1 em{font-style:normal;color:var(--red)}
-.fb .sub{font-size:17px;color:#e9e4e0;max-width:30ch}
-@media(min-width:820px){.fb{min-height:720px;display:flex;align-items:center}.fb .in{width:100%}.fb .ph{position:absolute;top:0;right:0;bottom:0;height:auto;left:42%;width:auto}.fb .ph img{object-position:50% 14%}.fb .ph:after{background:linear-gradient(90deg,#000 0,rgba(0,0,0,.35) 40%,rgba(0,0,0,0) 75%),linear-gradient(180deg,transparent 80%,#000)}.fb .tx{padding:90px 0;max-width:560px}.fb h1{font-size:76px}.fb .sub{max-width:38ch;font-size:19px}}
+.fb .sub{font-size:18px;color:#f5f1ee;max-width:34ch;margin:0 0 10px}.fb .sub2{font-size:16px;color:#cfc9c5;max-width:40ch;margin:0 0 6px}
+@media(min-width:820px){.fb{min-height:720px;display:flex;align-items:center}.fb .in{width:100%}.fb .ph{position:absolute;top:0;right:0;bottom:0;height:auto;left:42%;width:auto}.fb .ph img{object-position:50% 14%}.fb .ph:after{background:linear-gradient(90deg,#000 0,rgba(0,0,0,.35) 40%,rgba(0,0,0,0) 75%),linear-gradient(180deg,transparent 80%,#000)}.fb .tx{padding:90px 0;margin-top:0;max-width:600px}.fb h1{font-size:76px}.fb .sub{max-width:40ch;font-size:20px}.fb .sub2{max-width:46ch;font-size:17px}}
 article.read h2{margin-top:34px}article.read p,article.read li{font-size:18px}
 """
 
@@ -199,7 +199,8 @@ page("/", "Naddys Studio | Science-backed fitness, made simple",
  f"""<section class="fb"><div class="ph"><img src="/images/brand/naddy-gym.jpg" alt="Nadeem in the gym" width="1080" height="1910"></div>
 <div class="in"><div class="tx"><p class="eyebrow">Naddys Studio</p>
 <h1>Science-backed fitness, <em>made simple</em></h1>
-<p class="sub">Corporate by day, fitness addict for life. I lost 20 kg in 6 months and built a six-pack twice, with a full-time desk job.</p>
+<p class="sub"><b>Hi, I am Nadeem.</b> Corporate by day, fitness addict for life. I lost 20 kg in 6 months and built a six-pack twice, all while working a full-time desk job.</p>
+<p class="sub2">No magic and no hype. I read the research, test it on my own body, and share only what works for busy people. Here you will find simple guides on training, food and supplements, plus the products I actually use.</p>
 <p><a class="btn" href="/articles/">Start reading</a><a class="btn o" href="/shop/">See my picks</a></p></div></div></section>
 <div class="stats" style="margin-top:22px"><div><b>20 kg</b><span>lost in 6 months</span></div><div><b>2x</b><span>six-pack built</span></div><div><b>9 to 5</b><span>desk job, no excuses</span></div></div>
 <h2>Start here</h2>
