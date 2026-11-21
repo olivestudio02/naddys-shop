@@ -1,59 +1,51 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Naddys Studio Shop</title>
-<meta name="description" content="Fitness picks I actually use. Science-backed fitness, made simple.">
-<link rel="icon" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Naddys Studio | Science-backed fitness, made simple</title>
+<meta name="description" content="Science-backed fitness, made simple. Articles on training, nutrition and supplements, plus the products I actually use.">
+<link rel="canonical" href="https://naddysstudio.com/">
+<link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#0b0b0c">
-<style>
-:root{--bg:#0b0b0c;--card:#151517;--line:#2a2a2d;--red:#6ec4ff;--txt:#f4eeea;--mut:#a09a96}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 400px at 50% -100px,#0f2a3d,transparent),var(--bg);color:var(--txt);font:16px/1.45 -apple-system,system-ui,Segoe UI,Roboto,sans-serif;padding:0 16px env(safe-area-inset-bottom)}
-.wrap{max-width:720px;margin:0 auto}
-header{text-align:center;padding:32px 0 16px}header img{display:block;margin:0 auto;height:auto}header .ic{width:120px}header .nm{width:210px;margin-top:6px}
-h1{font-size:26px;margin:12px 0 4px;letter-spacing:.5px}h1 span{color:var(--red)}
-header p{margin:14px 0 0;color:var(--mut)}
-input{width:100%;margin:16px 0 12px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:16px}
-.trust{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:12px;padding:14px 16px;margin:18px 0 4px;font-size:14.5px;color:var(--txt)}.trust b{display:block;color:var(--red);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
-.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
-.chip{flex:none;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:15px}
-.chip.on{background:var(--red);border-color:var(--red);color:#06121a;font-weight:700}
-.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:16px 0}
-@media(min-width:560px){.grid{grid-template-columns:1fr 1fr}}
-.card.hl{border-color:var(--red);box-shadow:0 0 0 2px var(--red)}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-.card .img{height:240px;background:#1d1d20 center/cover no-repeat;display:flex;align-items:center;justify-content:center;font-size:44px}
-.card .b{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+<meta property="og:type" content="website"><meta property="og:site_name" content="Naddys Studio">
+<meta property="og:title" content="Naddys Studio | Science-backed fitness, made simple"><meta property="og:description" content="Science-backed fitness, made simple. Articles on training, nutrition and supplements, plus the products I actually use.">
+<meta property="og:url" content="https://naddysstudio.com/"><meta property="og:image" content="https://naddysstudio.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<!-- GOOGLE_SITE_VERIFICATION -->
+
+<style>:root{--bg:#0b0b0c;--card:#151517;--line:#2a2a2d;--red:#6ec4ff;--txt:#f4eeea;--mut:#a09a96}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 400px at 50% -100px,#0f2a3d,transparent),var(--bg);color:var(--txt);font:17px/1.6 -apple-system,system-ui,Segoe UI,Roboto,sans-serif;padding:0 16px env(safe-area-inset-bottom)}
+.wrap{max-width:720px;margin:0 auto}a{color:var(--red)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);gap:8px}
+nav .brand{display:flex;align-items:center;gap:8px;text-decoration:none}nav .brand img.i{width:34px;height:auto}nav .brand img.n{width:104px;height:auto}
+nav .links{display:flex;gap:14px;font-size:15px}nav .links a{color:var(--txt);text-decoration:none;padding:6px 0}nav .links a.on{color:var(--red);font-weight:700}
+h1{font-size:30px;line-height:1.2;margin:28px 0 8px}h2{font-size:22px;margin:32px 0 8px}h3{font-size:18px;margin:20px 0 4px}
+p,li{color:#e6e0dc}.mut{color:var(--mut)}.lead{font-size:19px;color:var(--txt)}
+.btn{display:inline-block;margin-top:8px;padding:12px 20px;border-radius:12px;background:var(--red);color:#06121a;font-weight:700;text-decoration:none}
+.btn.o{background:transparent;border:1px solid var(--red);color:var(--red)}
+.box{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:12px;padding:14px 16px;margin:20px 0;font-size:15.5px}
+.box b.t{display:block;color:var(--red);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+.cards{display:grid;gap:12px;margin:16px 0}.cards a.c{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;text-decoration:none;color:var(--txt)}
+.cards a.c b{display:block;font-size:18px;margin-bottom:4px}.cards a.c span{color:var(--mut);font-size:14.5px}
 .tag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:700}
-.card h3{margin:0;font-size:17px}.card p{margin:0;color:var(--mut);font-size:14px;flex:1}
-.btn{display:block;text-align:center;margin-top:8px;padding:12px;border-radius:12px;background:var(--red);color:#06121a;font-weight:700;text-decoration:none}
-.empty{text-align:center;color:var(--mut);padding:40px 0}
-footer{border-top:1px solid var(--line);margin-top:24px;padding:20px 0 32px;color:var(--mut);font-size:13px;text-align:center}
-footer a{color:var(--txt)}
+.hero{padding:28px 0 8px;text-align:center}.hero img{width:110px;height:auto}
+.meta{color:var(--mut);font-size:14px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:20px 0 32px;color:var(--mut);font-size:13.5px;text-align:center}footer a{color:var(--txt)}footer p{margin:6px 0}
 </style></head><body><div class="wrap">
-<header><img class="ic" src="logo-icon.png" alt="Naddys Studio"><img class="nm" src="logo-name.png" alt=""><p>Science-backed fitness, made simple</p></header>
-<div class="trust"><b>Why you can trust these picks</b>I test every product on my own body first. After years of self-testing and research, I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div>
-<input id="q" type="search" placeholder="Search products..." aria-label="Search">
-<div class="chips" id="chips"></div>
-<div class="grid" id="grid"></div>
+<nav><a class="brand" href="/"><img class="i" src="/logo-icon.png" alt=""><img class="n" src="/logo-name.png" alt="Naddys Studio"></a><div class="links"><a href="/" class=on>Home</a><a href="/articles/">Articles</a><a href="/shop/">Shop</a><a href="/about/">About</a></div></nav>
+<main>
+<div class="hero"><img src="/logo-icon.png" alt="Naddys Studio"></div>
+<h1 style="text-align:center">Science-backed fitness, made simple</h1>
+<p class="lead" style="text-align:center">I am a corporate employee by day and a fitness addict for life. I lost 20 kg in 6 months and got a six-pack twice. Here I share what actually worked, in plain words.</p>
+<p style="text-align:center"><a class="btn" href="/articles/">Read the articles</a> <a class="btn o" href="/shop/">See my picks</a></p>
+<h2>Latest articles</h2><div class="cards"><a class="c" href="/articles/magnesium-for-sleep-and-recovery/"><b>Magnesium for Sleep and Recovery: What It Does and How to Choose One</b><span>What it does for sleep and recovery, which form to pick, and what the research really says.</span></a><a class="c" href="/articles/how-to-choose-a-whey-protein/"><b>How to Choose a Whey Protein (Without Getting Fooled)</b><span>Concentrate, isolate or blend? Four label checks that matter, and how to avoid fake tubs.</span></a></div>
+<h2>What I am building</h2>
+<p>My goal is a place where anyone with a busy job can find honest, simple fitness advice that is backed by research, with no hype and no fake promises. Weekly articles, short videos on <a href="https://www.instagram.com/naddys_studio/">Instagram</a> and <a href="https://www.youtube.com/@Naddys_Studio">YouTube</a>, and a short list of products I trust.</p>
+<div class="box"><b class="t">Why trust this site</b>I test every product on my own body first. I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div>
+<script>if(location.hash){location.replace("/shop/"+location.hash)}</script>
+</main>
 <footer>
 <p>As an Amazon Associate I earn from qualifying purchases.</p>
-<p>Not medical advice. Check with your doctor before starting any supplement.</p>
+<p>Not medical advice. Check with your doctor before starting any supplement or new exercise plan.</p>
 <p><a href="https://www.instagram.com/naddys_studio/">Instagram</a> &middot; <a href="https://www.youtube.com/@Naddys_Studio">YouTube</a></p>
-</footer></div>
-<script>
-const ICON={Protein:"💪",Supplements:"💊","Fitness accessories":"🏋️"};let all=[],cat="All";
-const $=id=>document.getElementById(id);
-function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
-function render(){
- const q=$("q").value.toLowerCase();
- const list=all.filter(p=>(cat=="All"||p.category==cat)&&(p.title+" "+p.note).toLowerCase().includes(q));
- $("grid").innerHTML=list.length?list.map(p=>`<div class="card" id="${esc(p.id||p.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""))}"><div class="img" style="${p.image?`background-image:url('${esc(p.image)}');height:auto;aspect-ratio:1/1`:""}">${p.image?"":ICON[p.category]||"🛒"}</div><div class="b"><span class="tag">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.note)}</p><a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon</a></div></div>`).join(""):`<div class="empty">No products yet. Check back soon!</div>`;
-}
-function chips(){const cs=["All",...new Set(all.map(p=>p.category))];
- $("chips").innerHTML=cs.map(c=>`<button class="chip ${c==cat?"on":""}" data-c="${c}">${c}</button>`).join("");
- document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{cat=b.dataset.c;chips();render()})}
-$("q").oninput=render;
-fetch("products.json").then(r=>r.json()).then(d=>{
- all=d.products.filter(p=>p.enabled&&p.url&&p.url.startsWith("http"));
- if(new URLSearchParams(location.search).has("preview"))all=d.products;
- chips();render();const k=location.hash.slice(1);if(k){const e=document.getElementById(k);if(e){e.classList.add("hl");e.scrollIntoView({block:"center"})}}}).catch(()=>{$("grid").innerHTML='<div class="empty">Loading failed.</div>'});
-</script></body></html>
+<p><a href="/about/">About</a> &middot; <a href="/disclosure/">Disclosure</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/contact/">Contact</a></p>
+</footer></div></body></html>

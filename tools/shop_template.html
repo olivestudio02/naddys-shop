@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>My Fitness Picks | Naddys Studio Shop</title>
+<link rel="canonical" href="https://naddysstudio.com/shop/">
+<meta name="description" content="Fitness picks I actually use. Science-backed fitness, made simple.">
+<link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0b0b0c">
+<style>
+:root{--bg:#0b0b0c;--card:#151517;--line:#2a2a2d;--red:#6ec4ff;--txt:#f4eeea;--mut:#a09a96}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 400px at 50% -100px,#0f2a3d,transparent),var(--bg);color:var(--txt);font:16px/1.45 -apple-system,system-ui,Segoe UI,Roboto,sans-serif;padding:0 16px env(safe-area-inset-bottom)}
+.wrap{max-width:720px;margin:0 auto}
+header{text-align:center;padding:32px 0 16px}header img{display:block;margin:0 auto;height:auto}header .ic{width:120px}header .nm{width:210px;margin-top:6px}
+h1{font-size:26px;margin:12px 0 4px;letter-spacing:.5px}h1 span{color:var(--red)}
+header p{margin:14px 0 0;color:var(--mut)}
+input{width:100%;margin:16px 0 12px;padding:14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:16px}
+.trust{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:12px;padding:14px 16px;margin:18px 0 4px;font-size:14.5px;color:var(--txt)}.trust b{display:block;color:var(--red);font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}
+.chip{flex:none;padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-size:15px}
+.chip.on{background:var(--red);border-color:var(--red);color:#06121a;font-weight:700}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:16px 0}
+@media(min-width:560px){.grid{grid-template-columns:1fr 1fr}}
+.card.hl{border-color:var(--red);box-shadow:0 0 0 2px var(--red)}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card .img{height:240px;background:#1d1d20 center/cover no-repeat;display:flex;align-items:center;justify-content:center;font-size:44px}
+.card .b{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.tag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:700}
+.card h3{margin:0;font-size:17px}.card p{margin:0;color:var(--mut);font-size:14px;flex:1}
+.btn{display:block;text-align:center;margin-top:8px;padding:12px;border-radius:12px;background:var(--red);color:#06121a;font-weight:700;text-decoration:none}
+.empty{text-align:center;color:var(--mut);padding:40px 0}
+footer{border-top:1px solid var(--line);margin-top:24px;padding:20px 0 32px;color:var(--mut);font-size:13px;text-align:center}
+footer a{color:var(--txt)}
+</style></head><body><div class="wrap">
+<header><img class="ic" src="/logo-icon.png" alt="Naddys Studio"><img class="nm" src="/logo-name.png" alt=""><p>Science-backed fitness, made simple</p></header>
+<div class="trust"><b>Why you can trust these picks</b>I test every product on my own body first. After years of self-testing and research, I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div>
+<input id="q" type="search" placeholder="Search products..." aria-label="Search">
+<div class="chips" id="chips"></div>
+<div class="grid" id="grid"></div>
+<footer>
+<p>As an Amazon Associate I earn from qualifying purchases.</p>
+<p>Not medical advice. Check with your doctor before starting any supplement.</p>
+<p><a href="/">Home</a> &middot; <a href="/articles/">Articles</a> &middot; <a href="/about/">About</a> &middot; <a href="/disclosure/">Disclosure</a></p>
+<p><a href="https://www.instagram.com/naddys_studio/">Instagram</a> &middot; <a href="https://www.youtube.com/@Naddys_Studio">YouTube</a></p>
+</footer></div>
+<script>
+const ICON={Protein:"💪",Supplements:"💊","Fitness accessories":"🏋️"};let all=[],cat="All";
+const $=id=>document.getElementById(id);
+function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function render(){
+ const q=$("q").value.toLowerCase();
+ const list=all.filter(p=>(cat=="All"||p.category==cat)&&(p.title+" "+p.note).toLowerCase().includes(q));
+ $("grid").innerHTML=list.length?list.map(p=>`<div class="card" id="${esc(p.id||p.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""))}"><div class="img" style="${p.image?`background-image:url('/${esc(p.image)}');height:auto;aspect-ratio:1/1`:""}">${p.image?"":ICON[p.category]||"🛒"}</div><div class="b"><span class="tag">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.note)}</p><a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon</a></div></div>`).join(""):`<div class="empty">No products yet. Check back soon!</div>`;
+}
+function chips(){const cs=["All",...new Set(all.map(p=>p.category))];
+ $("chips").innerHTML=cs.map(c=>`<button class="chip ${c==cat?"on":""}" data-c="${c}">${c}</button>`).join("");
+ document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{cat=b.dataset.c;chips();render()})}
+$("q").oninput=render;
+fetch("/products.json").then(r=>r.json()).then(d=>{
+ all=d.products.filter(p=>p.enabled&&p.url&&p.url.startsWith("http"));
+ if(new URLSearchParams(location.search).has("preview"))all=d.products;
+ chips();render();const k=location.hash.slice(1);if(k){const e=document.getElementById(k);if(e){e.classList.add("hl");e.scrollIntoView({block:"center"})}}}).catch(()=>{$("grid").innerHTML='<div class="empty">Loading failed.</div>'});
+</script></body></html>
