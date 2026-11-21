@@ -32,6 +32,7 @@ MORE.append(dict(
 <li><b>Aim for 8,000 steps a day,</b> and a short walk after each meal makes it easy.</li>
 </ul>
 <p>Consistency beats intensity. This is a daily habit, not a 30-day challenge.</p>
+<div class="box"><b class="t">The one I use</b>For the protein breakfast on busy mornings I use a whey protein. You can see my protein picks on the shop page: <a href="/shop/">my protein picks</a>.</div>
 <div class="box"><b class="t">Check first if</b>you have diabetes, take blood sugar medication, are pregnant, or have any medical condition. Ask your doctor before training on an empty stomach.</div>
 """))
 
@@ -102,4 +103,175 @@ MORE.append(dict(
 <h2>Sources</h2>
 <ul><li>Shukla et al., BMJ Open Diabetes Research and Care, 2017 and 2019; Diabetes Care, 2015.</li><li>Imai et al., Nutrients, 2023.</li><li>Kuwata et al., Diabetologia, 2016.</li><li>Wyatt et al., Nature Metabolism, 2021 (PREDICT).</li><li>Buffey et al., Sports Medicine, 2022.</li><li>Donga et al., Journal of Clinical Endocrinology and Metabolism, 2010.</li></ul>
 <div class="box"><b class="t">Check first if</b>you have diabetes or take medicine for blood sugar. This can change your numbers, so talk to your doctor first.</div>
+"""))
+
+
+MORE.append(dict(
+ slug="why-fat-loss-stopped-plateau", date="2026-11-21", cat="Fat loss",
+ title="Why Your Fat Loss Stopped (And How to Restart It)",
+ desc="Stuck on the scale for weeks? The four reasons your body slows fat loss, how to check for a real plateau, and the steps that restart progress.",
+ tagline="Four reasons the scale gets stuck, and the steps that get it moving again.",
+ body=vid("https://www.youtube.com/@Naddys_Studio", "More videos on my YouTube channel") + """
+<p class="lead">You are eating less and training hard. The first few kilos came off easily, and then around week four the scale stopped. You are not lazy and your body is not broken. It is doing what it was built to do: protect you from starving. Once you understand how, you can get fat loss moving again.</p>
+<h2>First, is it a real plateau?</h2>
+<p>Your weight on any single morning is mostly noise. A salty dinner, a late meal, a heavy leg day or a bad night's sleep can hold one to two kilos of water and hide a week of real fat loss. My rule: weigh yourself in the morning after the bathroom and before eating, look at the weekly average, and measure your waist once a week. If both have not moved for three weeks or more, it is a real plateau. Anything shorter is usually water.</p>
+<h2>Why your body slows fat loss down</h2>
+<h3>1. A smaller body burns less</h3>
+<p>When you were heavier, your body needed more energy to carry that weight. Lose eight or ten kilos and it needs fewer calories. The meal plan that gave you a deficit in week one can be close to maintenance by week eight.</p>
+<h3>2. Your body turns down the thermostat</h3>
+<p>Researchers at Columbia University found that after people lost about 10% of their body weight, they burned fewer calories than their new size alone could explain, roughly 10 to 15% less. This is called adaptive thermogenesis, an energy-saving mode. It is not a broken metabolism.</p>
+<h3>3. You move less without noticing</h3>
+<p>In a deficit, your body quietly cuts small movement like fidgeting, standing, pacing on calls and taking stairs. This is called NEAT, the energy you burn outside workouts. A large part of the slowdown in those studies came from daily movement, not resting metabolism.</p>
+<h3>4. Your hunger gets louder</h3>
+<p>After fat loss, the fullness hormone leptin drops and the hunger hormone ghrelin rises. A study in the New England Journal of Medicine found these signals were still altered a year after people finished dieting. Portions creep up. In another well-known study, people who said they could not lose weight were eating about 47% more than they reported, and overestimated their exercise by about half. Not because they lied, but because all of us are bad at guessing.</p>
+<h2>How to restart fat loss</h2>
+<ol>
+<li><b>Take a planned diet break.</b> In an Australian study called MATADOR, men who dieted in two-week blocks with two weeks at maintenance in between lost about 50% more fat than men who dieted continuously, and kept more of it off six months later. It was a small study in men with obesity, but it matches what many coaches see. After two to three months of hard dieting, try one to two weeks at maintenance. Normal balanced meals, not a binge.</li>
+<li><b>Recalculate your deficit.</b> You are a smaller person now. Track your portions honestly for a week. Most plateaus hide in oil, sauces and snacks.</li>
+<li><b>Protect your muscle.</b> Lift weights four or more days a week and keep the weights challenging. Dieting without lifting costs muscle, which lowers the thermostat further.</li>
+<li><b>Bring daily movement back.</b> Stand up every hour, take the stairs, walk on calls, and walk a few minutes after each meal.</li>
+</ol>
+<h2>Habits that help</h2>
+<ul><li>Build meals around protein and vegetables, so the louder hunger is easier to handle.</li><li>Guard your sleep, with a regular bedtime.</li><li>Eat dinner early, three to four hours before bed.</li><li>Keep added sugar out of tea, biscuits and packaged snacks.</li></ul>
+<p>A plateau is not a stop sign. It is your body saying it has adapted, so show it something new.</p>
+<h2>Sources</h2>
+<ul><li>Rosenbaum and Leibel, International Journal of Obesity, 2010.</li><li>Sumithran et al., New England Journal of Medicine, 2011.</li><li>Lichtman et al., New England Journal of Medicine, 1992.</li><li>Byrne et al., International Journal of Obesity, 2018 (MATADOR).</li><li>Levine et al., Science, 1999 (NEAT).</li></ul>
+"""))
+
+MORE.append(dict(
+ slug="5-habits-stay-lean-full-time-job", date="2026-11-21", cat="Habits",
+ title="5 Habits That Keep Me Lean With a Full-Time Job",
+ desc="Five simple habits for staying lean while working full time: prepare tonight, a fixed gym slot, a workday eating plan, weekly tracking and a two-minute night plan.",
+ tagline="Not more motivation, a system: five small habits for a busy week.",
+ body=vid("https://youtu.be/DJFnF-Yv5Xw") + """
+<p class="lead">I work a full-time corporate job and I stay lean. It is not a secret diet and it is not genetics. It is five small habits. Motivation is gone by Wednesday, sometimes by Tuesday lunch, so I use a system.</p>
+<h2>Habit 5: prepare tomorrow, tonight</h2>
+<p>Two things: food and your workout. Five minutes before bed, portion your meals, cook your protein and pack your lunch. At one in the afternoon with a deadline and an empty stomach, you choose with hunger, not logic. A packed lunch box beats willpower every time. Then set out your clothes, shoes and water bottle next to the bed. I start every day with a walk outside, which I explain in my <a href="/articles/fasted-morning-walk-fat-loss/">fasted morning walk article</a>.</p>
+<h2>Habit 4: a fixed gym slot</h2>
+<p>Mine is 7 to 9 in the morning, right after my walk and before the office day starts. Same time, no negotiation, at least five days a week. It is a meeting I cannot move. A study from University College London found new habits took about 66 days on average to form, and anywhere from 18 to 254 days. So the first two months are the hardest, and a fixed time means you stop deciding every morning.</p>
+<h2>Habit 3: a set workday eating plan</h2>
+<p>Decide your workday eating before the day starts: two real meals and one planned snack. Lean protein such as chicken, fish or eggs, with plenty of vegetables. Warm water, lime water or green tea to drink, and no sugary drinks. The rule is simple: if it is not in the plan, it does not get eaten.</p>
+<h2>Habit 2: track the week, not the day</h2>
+<p>Body weight can swing one or two kilos in a day from water, salt and food in your gut. If you panic at every daily number, you will quit on a good week. Weigh at the same time under the same conditions and look at the weekly average. Add your waist, a photo and what you lift. Reviews of weight-loss studies keep finding that people who consistently monitor themselves do better.</p>
+<h2>Habit 1: the two-minute night plan</h2>
+<p>Every night I write three lines: what I will eat, when I will train, and when I will stop. For example: "7 a.m., I am in the gym. 1 p.m., I eat the packed lunch." Psychologists call these if-then plans. A large review of 94 studies found that people who write down exactly when and where they will act are far more likely to follow through. Two minutes, no app, no willpower. It ties the other four habits together.</p>
+<h2>One last thing</h2>
+<p>Give yourself the chance to get into the best shape you can, whatever your goal is. Then stand in front of the mirror and look at yourself. That day is not your finish line. It is your starting point.</p>
+<h2>Sources</h2>
+<ul><li>Lally et al., European Journal of Social Psychology, 2010 (habit formation).</li><li>Gollwitzer and Sheeran, 2006 (implementation intentions, 94 studies).</li><li>Burke et al., Journal of the American Dietetic Association, 2011 (self-monitoring).</li></ul>
+"""))
+
+MORE.append(dict(
+ slug="4-things-wrecking-sleep-and-fat-loss", date="2026-11-21", cat="Sleep",
+ title="4 Things Wrecking Your Sleep and Your Fat Loss",
+ desc="Poor sleep makes you hungrier and can slow fat loss. Four common evening mistakes: late caffeine, a warm bright room, an irregular bedtime and a late heavy dinner.",
+ tagline="Late caffeine, a bright room, an irregular bedtime and a heavy late dinner.",
+ body=vid("https://www.youtube.com/@Naddys_Studio", "More videos on my YouTube channel") + """
+<p class="lead">You eat clean, you train hard, and the scale still will not move. The problem might not be your diet or your workout. It might be what you do in the four hours before bed.</p>
+<h2>Why sleep matters for fat loss</h2>
+<p>In a well-known 2004 study, healthy people slept only four hours for two nights. Their leptin, the "I am full" hormone, dropped by about 18%, and their ghrelin, the hunger hormone, rose by about 28%. In another study, two groups ate the same diet, one sleeping 8.5 hours and the other 5.5 hours. The short sleepers lost about 55% less fat, and more of their weight loss came from muscle. Same food, same plan, only sleep was different.</p>
+<h2>4. Caffeine after lunch</h2>
+<p>Caffeine stays active for hours. One study found caffeine taken even six hours before bed cut sleep by more than an hour. You may fall asleep fine, but your deep sleep takes the hit. Have your last cup at least eight hours before bed. If you sleep at 11, that is 3 p.m. Colas, fizzy drinks and energy drinks contain caffeine too, including the diet versions, and green tea has a little. Switch to lime water or warm water later in the day.</p>
+<h2>3. A warm, bright room</h2>
+<p>To fall asleep, your core temperature has to drop, and a hot room fights that. Most sleep research points to a cool room, around 18 to 20 degrees Celsius if you can manage it. Light matters just as much: a dim lamp or a phone screen can hold back melatonin, your sleep hormone. For the last hour before bed, keep screens away, dim the lights and make the room as dark as you can, or use a sleep mask. If you cannot avoid screens, use night mode. Blue-light filter glasses may help a little, but the evidence is mixed, so treat them as plan B.</p>
+<h2>2. An irregular bedtime</h2>
+<p>Ten on Monday, one in the morning on Friday, noon on Sunday: your body clock dislikes this. Researchers call it social jet lag. Studies link irregular sleep schedules with higher body weight and worse blood sugar control, even when total hours look the same. Pick a wake-up time and keep it within about an hour every day. The bedtime follows.</p>
+<h2>1. A big, late dinner</h2>
+<p>When dinner is a huge meal at 10 p.m., your body is busy digesting, blood sugar and body temperature stay up, and sleep gets lighter. Poor sleep makes you hungrier tomorrow and the loop continues. Finish dinner three to four hours before bed. Eating earlier in the evening works better for blood sugar, hunger and sleep. If work ends late, make dinner lighter, not larger, and move your bigger meal to lunch. Use the order from my <a href="/articles/eat-in-the-right-order-blood-sugar/">food order article</a>, and a short slow walk after dinner helps too.</p>
+<h2>A bonus tip</h2>
+<p>Magnesium helps muscles and nerves relax, and some studies link it with better sleep quality. The research is modest, but I take a magnesium supplement in the evening and my sleep has improved. I explain how to choose one in my <a href="/articles/magnesium-for-sleep-and-recovery/">magnesium article</a>.</p>
+<div class="box"><b class="t">The one I use</b>You can see my magnesium pick on the shop page: <a href="/shop/#magnesium">my magnesium pick</a>.</div>
+<h2>Pick one</h2>
+<p>You do not need all four tonight. Pick one, try it for a week, and watch your hunger and your mornings change.</p>
+<div class="box"><b class="t">See a doctor if</b>you have trouble sleeping for weeks, or you snore loudly and still wake up tired.</div>
+"""))
+
+MORE.append(dict(
+ slug="cardio-or-weights-for-fat-loss", date="2026-11-21", cat="Training",
+ title="Cardio or Weights for Fat Loss? Stop Choosing Between Them",
+ desc="Cardio or weights for fat loss? What the research says, why weights protect muscle when you diet, and a simple weekly plan that uses both.",
+ tagline="Why they are teammates, what the studies found, and a simple weekly plan.",
+ body=vid("https://www.youtube.com/@Naddys_Studio", "More videos on my YouTube channel") + """
+<p class="lead">Cardio or weights for fat loss? It is the wrong question, like asking whether you need a left shoe or a right shoe. Pick one side and you can lose weight but lose muscle too: smaller, softer, same shape.</p>
+<h2>The fight is fake</h2>
+<p>Cardio burns calories while you do it and is great for your heart. Weights burn fewer calories per session, but they tell your body to keep its muscle. Cardio is the engine and weights are the shape. Neither is the main fat loss tool. A small calorie deficit is. Exercise helps you stay in that deficit and decides what you lose: fat or muscle.</p>
+<h2>What the research says about fat</h2>
+<p>In the STRRIDE trials, overweight adults were split for eight months into cardio only, weights only, or both. Cardio lost fat. Weights gained muscle but did not lose much fat on their own. Both together did both, though it took the most time in the gym. If you only want the scale and the fat number to move, cardio is more direct. If you want to change how you look, you need both.</p>
+<h2>Why weights protect you when you diet</h2>
+<p>When you eat less, your body takes muscle as well as fat. A 2025 review in Frontiers in Nutrition pooled 62 trials with over 4,000 adults. Dieting alone lost the most lean mass, and adding exercise, whether weights, cardio or a mix, reduced that loss. Weights do not burn the fat for you. They make sure the weight you lose is fat. Same weight on the scale, very different person in the mirror.</p>
+<h2>Does cardio kill your gains?</h2>
+<p>There is something called the interference effect: too much endurance work can blunt strength and muscle gain. But a large 2022 review found that cardio added to lifting did not stop muscle growth. Problems showed up mostly with lots of running, many sessions a week and no gap between cardio and weights. Keep cardio to two or three easy-to-moderate sessions, and lift first if they are on the same day. Cardio does not build much muscle, but it gives you a stronger heart, better recovery between sets and the stamina to finish a hard session.</p>
+<h2>The simple plan</h2>
+<ol>
+<li><b>Lift four to five days a week</b> and cover every muscle group within the week.</li>
+<li><b>Add two or three cardio sessions,</b> 20 to 30 minutes, easy to moderate.</li>
+<li><b>Walk.</b> Aim for 8,000 to 10,000 steps a day, split into short walks after meals.</li>
+<li><b>Eat in a small deficit</b> so the fat actually leaves: lean protein, vegetables and a proper bowl of carbs.</li>
+</ol>
+<p>Cardio and weights are teammates, and your diet is the coach telling them both what to do.</p>
+<h2>Sources</h2>
+<ul><li>Willis et al., Journal of Applied Physiology, 2012 (STRRIDE AT/RT).</li><li>Xie et al., Frontiers in Nutrition, 2025 (network meta-analysis, 62 trials).</li></ul>
+"""))
+
+MORE.append(dict(
+ slug="festive-season-without-gaining-fat", date="2026-11-21", cat="Nutrition",
+ title="Festive Season Without Gaining Fat: 5 Rules for Weddings and Festivals",
+ desc="Weddings, festivals and Christmas without the fat gain. What research says about holiday weight creep, and five simple rules for the buffet.",
+ tagline="One big meal will not make you fat. Five rules to stop the creep.",
+ body=vid("https://www.youtube.com/@Naddys_Studio", "More videos on my YouTube channel") + """
+<p class="lead">Weddings, festivals, Christmas. Whichever is on your calendar, the next six weeks are one long buffet. Most people enjoy it and then spend January fixing it. Here is how to enjoy all of it without paying for it later.</p>
+<h2>One meal does not make you fat</h2>
+<p>You step on the scale the morning after a wedding dinner and it says one kilo up. That is mostly water and food still travelling through you. Fat gain needs extra calories over many days, not one dinner. A festive season is not one meal. It is six weeks of "just one more".</p>
+<h2>What the research says</h2>
+<p>A US government study followed 195 adults from Thanksgiving to New Year. The average gain was about 0.4 kg. The surprise: it did not come off. By the end of the year, people were about half a kilo heavier than the year before. A 2016 study tracking about 2,900 adults in the US, Germany and Japan with smart scales found weight rose after every holiday, with the biggest jump after Christmas, about 0.5% in ten days. The researchers noted people tend to keep about half of it. The feast is not the problem. The creep is.</p>
+<h2>The 5 rules</h2>
+<h3>1. Do not arrive starving</h3>
+<p>Skipping lunch to save space means you arrive like a lion at feeding time. Have a normal meal earlier with real protein and some vegetables.</p>
+<h3>2. Protein and fibre before the plate</h3>
+<p>Good protein at a wedding is hard to find, so I bring my own. About 15 to 20 minutes before I eat, I have a scoop of whey protein, around 25 grams. For fibre, I stir about a spoonful of psyllium husk into a full glass of water, which is roughly 5 to 6 grams of fibre. Always take psyllium with plenty of water, never dry, and start with a smaller amount if your gut is sensitive. Protein slows how fast your stomach empties and fibre does a similar job. One small study in people with type 2 diabetes found whey before a carb meal reduced the blood sugar rise, but that used a bigger dose in a different group, so I call mine a personal habit, not a magic number. At the table, use the order from my <a href="/articles/eat-in-the-right-order-blood-sugar/">food order article</a>: protein and vegetables first, starch and sweets last.</p>
+<h3>3. Pick favourites, skip fillers</h3>
+<p>Ask one question: can I eat this on any random Tuesday? Plain bread rolls, a third fried starter, a second plate of the same thing? Skip. The dessert only one relative makes once a year? Enjoy it without guilt.</p>
+<h3>4. Walk ten minutes after the big meal</h3>
+<p>Reviews of light walking after eating show lower blood sugar afterwards. At a wedding, getting some air is also a perfect escape from the uncle asking about your salary.</p>
+<h3>5. Keep the basics and reset fast</h3>
+<p>Keep lifting four to five days a week, even if the session is shorter, and keep a fixed bedtime on non-event days. The day after, no punishment: no skipped meals and no two-hour cardio. Balanced plates, lean protein, plenty of vegetables and 8,000 to 10,000 steps across the day. Back to normal within one meal.</p>
+<div class="box"><b class="t">The one I use</b>The whey I bring to events is on my shop page: <a href="/shop/">my protein picks</a>.</div>
+<h2>Recap</h2>
+<p>Eat before, whey and psyllium, favourites only, walk, reset. A festive season is a few big nights, not a lifestyle. Do not let a few nights turn into six weeks.</p>
+<h2>Sources</h2>
+<ul><li>Yanovski et al., New England Journal of Medicine, 2000 (195 adults, holiday weight).</li><li>Helander et al., New England Journal of Medicine, 2016 (2,924 adults, smart scales).</li><li>Ma et al., Diabetes Care, 2009 (whey before a meal).</li></ul>
+<div class="box"><b class="t">Check first if</b>you have diabetes, take blood sugar medication, or have a sensitive gut. Ask your doctor before using psyllium or changing how you eat.</div>
+"""))
+
+MORE.append(dict(
+ slug="intermittent-fasting-does-it-work", date="2026-11-21", cat="Nutrition",
+ title="Intermittent Fasting: Does It Work? The Simple 12-Hour Rule",
+ desc="Does intermittent fasting really burn fat? What three large studies found, and the simple 12 to 14 hour routine I use, with 16 hours on rest days.",
+ tagline="What the research says about 16:8, and the easy way I use fasting.",
+ body=vid("https://www.youtube.com/@Naddys_Studio", "More videos on my YouTube channel") + """
+<p class="lead">Does intermittent fasting really burn fat? The studies say it is not magic. But there is a simple way to use it that works for me, and I will share it here.</p>
+<h2>What it is</h2>
+<p>Intermittent fasting means eating only inside a set window of the day. The most popular version is 16:8: sixteen hours without food and all meals in the other eight. For example, you eat between noon and 8 p.m. and nothing from 8 p.m. until noon the next day.</p>
+<h2>What the research says</h2>
+<ul>
+<li>A 2022 New England Journal of Medicine trial of 139 adults for one year compared calorie restriction with time-restricted eating against calorie restriction alone. Weight loss was about 8 kg versus 6.3 kg, and the difference was not statistically significant.</li>
+<li>A 2020 JAMA Internal Medicine trial of 116 adults compared 12 weeks of 16:8 with normal meals and found almost no difference in weight.</li>
+<li>A Cochrane review of 22 studies with nearly 2,000 people found little to no difference in weight loss between intermittent fasting and traditional dietary advice.</li>
+</ul>
+<p>That does not mean fasting is bad. It means fasting is not magic. It is another way to eat fewer calories, and weight loss still comes down to your weekly intake. The best plan is the one you can stick to.</p>
+<h2>Step 1: the 12 to 14 hour default</h2>
+<p>Finish dinner by 7 p.m. and have your first meal at 7 or 8 the next morning. That is already 12 to 14 hours, and it is basically a normal night's sleep with the kitchen closed. It cuts late-night snacking, where many hidden calories live, with no hunger games. For most people this is enough.</p>
+<h2>Step 2: my 16-hour rest days</h2>
+<p>This is my own routine, not a rule from a study. I have done it for months and I see results. On days I lift, I keep the 12 to 14 hour window, because my muscles need fuel. On two non-lifting days a week I stretch the window to 16 hours, since I need fewer calories on lower-activity days. In the extra hours I do cardio on an empty stomach: a medium-pace walk, plus a few ab exercises some days. Choose any cardio you enjoy, but a medium-pace walk is a good default. Then I break my fast around 12 or 1 with a proper protein meal.</p>
+<p>A fair caveat: studies comparing fasted and fed cardio over a few weeks tend to find similar total fat loss. It works for me because it is simple, I can repeat it every week, and consistency is what decides results. Inside the fast I keep it clean: water, warm lime water or green tea, nothing sugary, and no alcohol.</p>
+<h2>Guardrails</h2>
+<ul>
+<li>Do not fast longer than feels good on lifting days.</li>
+<li>Protein at every meal, and lift four to five days a week.</li>
+<li>Aim for 8,000 to 10,000 steps, split into short walks after meals, and keep a fixed bedtime.</li>
+<li>If you feel dizzy during fasted cardio, stop and eat.</li>
+</ul>
+<h2>Sources</h2>
+<ul><li>Liu et al., New England Journal of Medicine, 2022.</li><li>Lowe et al., JAMA Internal Medicine, 2020.</li><li>Cochrane review CD015610 (intermittent fasting for weight loss).</li></ul>
+<div class="box"><b class="t">Talk to your doctor first if</b>you have a medical condition, are pregnant, take medication, or have ever had a difficult relationship with food.</div>
 """))
