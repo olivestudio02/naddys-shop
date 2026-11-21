@@ -68,7 +68,7 @@ def page(path, title, desc, body, active="", extra_head="", article=None, og_tit
     nav = "".join(f'<a href="{h}" class="{"shop " if n=="Shop" else ""}{"on" if n==active else ""}">{n}</a>' for n,h in NAV)
     ld = ""
     if article:
-        ld = ('<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":%s,"description":%s,"datePublished":"%s","author":{"@type":"Person","name":"Nadeem Ahmed"},"publisher":{"@type":"Organization","name":"Naddys Studio","logo":{"@type":"ImageObject","url":"%s/logo.png"}},"mainEntityOfPage":"%s","image":"%s/og.png"}</script>'
+        ld = ('<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":%s,"description":%s,"datePublished":"%s","author":{"@type":"Person","name":"Nadeem"},"publisher":{"@type":"Organization","name":"Naddys Studio","logo":{"@type":"ImageObject","url":"%s/logo.png"}},"mainEntityOfPage":"%s","image":"%s/og.png"}</script>'
               % (jsq(title), jsq(desc), article, SITE, url, SITE))
     out = f"""<!doctype html>
 <html lang="en"><head>
