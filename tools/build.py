@@ -123,7 +123,7 @@ def date_h(d):
 article("magnesium-for-sleep-and-recovery",
  "Magnesium for Sleep and Recovery: What It Does and How to Choose One",
  "A plain-English look at magnesium for sleep and muscle recovery: what the research suggests, which forms exist, and how to pick a supplement without wasting money.",
- "2026-11-22", """
+ "2026-11-21", """
 <p class="lead">If you train hard, sit at a desk all day and still wake up feeling flat, magnesium is one of the cheapest things worth understanding. Here is what it actually does, what the research does and does not say, and how I choose one.</p>
 <h2>What magnesium does in your body</h2>
 <p>Magnesium is a mineral involved in hundreds of reactions in the body. That includes how muscles contract and relax, how nerves signal, and how your body makes energy. Hard training, sweat and a rushed diet can leave you on the lower side, and a lot of people simply do not eat much of it.</p>
@@ -157,7 +157,7 @@ article("magnesium-for-sleep-and-recovery",
 article("how-to-choose-a-whey-protein",
  "How to Choose a Whey Protein (Without Getting Fooled)",
  "Whey concentrate, isolate or blend? A simple guide to reading a whey protein label, spotting weak products and choosing one that suits your stomach and budget.",
- "2026-11-26", """
+ "2026-11-21", """
 <p class="lead">Walk into any supplement aisle and every tub claims to be the best. Most of the difference comes down to four things on the label. Here is how I check them.</p>
 <h2>First: do you even need whey?</h2>
 <p>Whey is just a convenient protein source. If your meals already hit your protein target, you do not need it. It earns its place when food falls short, like busy workdays or after training.</p>
