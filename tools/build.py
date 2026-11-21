@@ -8,7 +8,7 @@ YT = "https://www.youtube.com/@Naddys_Studio"
 
 CSS = """:root{--bg:#09090b;--card:#141417;--line:#26262b;--red:#6ec4ff;--red2:#3a9de0;--txt:#f5f1ee;--mut:#a3a0a0}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1100px 520px at 50% -160px,#10324b,transparent),var(--bg);color:var(--txt);font:17px/1.65 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding:0 0 env(safe-area-inset-bottom);-webkit-font-smoothing:antialiased;overflow-x:clip}
-.wrap{max-width:1240px;margin:0 auto;padding:0 18px}.ph{margin:22px 0}.ph img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;display:block;border:1px solid #26262b}.ph.phero{margin-top:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 18px}.afig{margin:22px 0}.afig img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;display:block;border:1px solid #26262b}.afig.phero{margin-top:0}
 .intoc .th{font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase;color:#6ec4ff}.intoc{background:#111114;border:1px solid #26262b;border-radius:14px;padding:16px 20px;margin:18px 0}.intoc ol{margin:8px 0 0 18px;padding:0}.intoc li{margin:4px 0}.intoc a{color:#6ec4ff}
 .read{max-width:760px;margin:0}a{color:var(--red)}img{max-width:100%}
 .topbar{position:sticky;top:0;z-index:20;background:rgba(9,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
@@ -133,6 +133,7 @@ def jsq(s):
 
 ARTICLES = []
 
+COVPOS={"how-to-choose-a-whey-protein":"50% 8%"}
 COVERS={"magnesium-for-sleep-and-recovery":"/images/topics/magnesium-sleep.jpg","how-to-choose-a-whey-protein":"/images/brand/naddy-kitchen.jpg","fasted-morning-walk-fat-loss":"/images/topics/fasted-walk.jpg","visceral-fat-belly-fat-explained":"/images/topics/visceral-fat.jpg","eat-in-the-right-order-blood-sugar":"/images/topics/food-order.jpg","why-fat-loss-stopped-plateau":"/images/topics/plateau.jpg","5-habits-stay-lean-full-time-job":"/images/topics/habits.jpg","4-things-wrecking-sleep-and-fat-loss":"/images/topics/sleep.jpg","cardio-or-weights-for-fat-loss":"/images/topics/cardio-weights.jpg","festive-season-without-gaining-fat":"/images/topics/festive.jpg","intermittent-fasting-does-it-work":"/images/topics/fasting.jpg"}
 CATS={}
 def pagehead(eyebrow, title, lead="", meta=""):
@@ -157,7 +158,7 @@ def enrich(slug, title, body):
         fn=f"/images/topics/{slug}-{n[0]}.jpg"
         if not _os.path.exists("."+fn): return out
         alt=html.escape(h.strip()+" ("+title+")")
-        return out+f'<figure class="ph"><img src="{fn}" alt="{alt}" loading="lazy" width="1200" height="800"></figure>'
+        return out+f'<figure class="afig"><img src="{fn}" alt="{alt}" loading="lazy" width="1200" height="800"></figure>'
     body=_re.sub(r"<h2>([^<]*)</h2>", sub, body)
     toc='<div class="intoc"><div class="th">In this article</div><ol>'+"".join(f'<li><a href="#s{i+1}">{html.escape(h)}</a></li>' for i,h in enumerate(heads) if h.strip() not in SKIPH)+'</ol></div>'
     return body, toc
@@ -165,7 +166,7 @@ def enrich(slug, title, body):
 def article(slug, title, desc, date, body, tagline, cat="Fitness"):
     path = f"/articles/{slug}/"
     body, toc = enrich(slug, title, body)
-    hero = f'<figure class="ph phero"><img src="{COVERS[slug]}" alt="{html.escape(title)}" width="1200" height="800"></figure>' if slug in COVERS else ""
+    hero = f'<figure class="afig phero"><img src="{COVERS[slug]}" alt="{html.escape(title)}" width="1200" height="800" style="object-position:{COVPOS.get(slug,'center')}"></figure>' if slug in COVERS else ""
     ARTICLES.append((slug, title, tagline, date, cat))
     inner = pagehead(cat, title, "", f"By Nadeem &middot; {date_h(date)}") + f"""<div class="artgrid"><article class="read" style="margin:0;max-width:760px">
 <div class="box" style="margin-top:0"><b class="t">Quick note</b>This is general information from my own research and experience, not medical advice. Talk to your doctor before changing your diet, starting a supplement or a new exercise plan, especially if you have a health condition or take medicines.</div>
@@ -252,7 +253,7 @@ for (path,title,desc,inner,date,slug) in ARTPAGES:
     page(path, title, desc, inner.replace("@@SIDE@@", sidebar(slug)), active="Articles", article=date)
 ARTICLES.sort(key=lambda a_: a_[3], reverse=True)
 def card(s_,t,g,d,cat):
-    cv = f'<div class="cv" style="background-image:url({COVERS[s_]})"></div>' if s_ in COVERS else f'<div class="cv g">{html.escape(cat)}</div>'
+    cv = f'<div class="cv" style="background-image:url({COVERS[s_]});background-position:{COVPOS.get(s_,"center")}"></div>' if s_ in COVERS else f'<div class="cv g">{html.escape(cat)}</div>'
     return f'<a class="c" data-cat="{html.escape(cat)}" href="/articles/{s_}/">{cv}<div class="cb"><span class="tag">{html.escape(cat)} &middot; {date_h(d)}</span><b>{html.escape(t)}</b><span class="d">{html.escape(g)}</span></div></a>'
 cards = "".join(card(*a_) for a_ in ARTICLES)
 cats = sorted({a_[4] for a_ in ARTICLES})
