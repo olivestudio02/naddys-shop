@@ -275,3 +275,69 @@ MORE.append(dict(
 <ul><li>Liu et al., New England Journal of Medicine, 2022.</li><li>Lowe et al., JAMA Internal Medicine, 2020.</li><li>Cochrane review CD015610 (intermittent fasting for weight loss).</li></ul>
 <div class="box"><b class="t">Talk to your doctor first if</b>you have a medical condition, are pregnant, take medication, or have ever had a difficult relationship with food.</div>
 """))
+
+MORE.append(dict(
+ slug="creatine-monohydrate-guide", date="2026-11-21", cat="Supplements",
+ title="Creatine Monohydrate: What It Does, Who It Is For and How to Take It",
+ desc="A plain-English guide to creatine monohydrate: what the research says about muscle and strength, the common myths, and a simple way to take it every day.",
+ tagline="The most researched supplement in sport, explained simply: benefits, myths and how much to take.",
+ body="""
+<p class="lead">If you lift weights, there is one supplement that the research keeps backing, and it is also cheap. It is creatine. Here is what it does, what the myths get wrong, and a simple way to take it.</p>
+<h2>What creatine does</h2>
+<p>Your muscles use a quick energy store during hard sets. Creatine helps refill that store. In practice, that can mean one or two extra reps on a set. Over months, those extra reps add up to more training volume, and more training volume is one of the main drivers of muscle gain.</p>
+<p>Your body makes some creatine itself, and you also get small amounts from foods such as chicken and fish. A supplement raises the amount stored in your muscles beyond what normal food usually gives.</p>
+<h2>What the research found</h2>
+<p>A 2017 meta-analysis pooled 22 studies with 721 adults, mostly middle-aged and older. People who lifted weights and took creatine gained about 1.4 kg more lean mass than people who lifted alone, and they improved strength on exercises such as chest press and leg press. Position statements from sports nutrition bodies describe creatine monohydrate as one of the most effective and best-studied supplements for training.</p>
+<h2>Myths, answered</h2>
+<ul>
+<li><b>"It is a steroid."</b> No. It is a compound your body already makes, and it is found in everyday foods.</li>
+<li><b>"It is only water weight."</b> Creatine does draw water into the muscle cell, which is where you want it. That is not the same as puffiness under the skin.</li>
+<li><b>"It harms the kidneys."</b> Studies in healthy people at normal doses have not found kidney harm. If you have a kidney condition, ask your doctor first.</li>
+<li><b>"It is only for men."</b> Research in women shows similar strength benefits, including around and after menopause.</li>
+<li><b>"It causes hair loss."</b> This link has not been proven.</li>
+</ul>
+<h2>How to take it</h2>
+<ul>
+<li><b>Choose plain creatine monohydrate.</b> It is the form with the most research behind it. Nothing fancy is needed.</li>
+<li><b>Take 3 to 5 grams a day,</b> including rest days. Daily consistency matters more than timing.</li>
+<li><b>Take it any time,</b> mixed into water, a juice or your protein shake. A loading phase is not required.</li>
+<li><b>Be patient.</b> It takes a few weeks of daily use for your muscles to fill up.</li>
+<li><b>Drink water through the day,</b> as you should anyway.</li>
+</ul>
+<h2>Do you need to lift for it to help?</h2>
+<p>It works best alongside resistance training, ideally several days a week. Some research also suggests benefits for memory and mental focus, especially in older adults, because the brain uses creatine for energy too. That evidence is smaller, so treat it as a possible extra, not the main reason to take it.</p>
+<div class="box"><b class="t">The one I use</b>I use a pure creatine monohydrate made with Creapure, which is doping-tested. You can see it with my note on the shop page: <a href="/shop/#creatine">my creatine pick</a>.</div>
+<h2>Sources</h2>
+<ul><li>Chilibeck et al., Open Access Journal of Sports Medicine, 2017: creatine and resistance training in older adults, meta-analysis.</li><li>Kreider et al., Journal of the International Society of Sports Nutrition, 2017: position stand on creatine.</li><li>Antonio et al., Journal of the International Society of Sports Nutrition, 2021: common questions and misconceptions about creatine.</li><li>Smith-Ryan et al., Nutrients, 2021: creatine in women's health.</li><li>Avgerinos et al., Experimental Gerontology, 2018: creatine and cognition.</li></ul>
+<div class="box"><b class="t">Check first if</b>you have a kidney condition, are pregnant or take any medicine. Talk to your doctor before starting a supplement.</div>
+"""))
+
+MORE.append(dict(
+ slug="progressive-overload-no-results-gym", date="2026-11-21", cat="Training",
+ title="Training Hard but No Results? Progressive Overload Explained Simply",
+ desc="Why doing the same workout every week stops working, what progressive overload means, and three simple ways to apply it: more reps, more weight and a workout log.",
+ tagline="Same workout every week means the same result. Three simple ways to keep progressing.",
+ body="""
+<p class="lead">You go to the gym regularly and train hard, yet your body looks the same as it did months ago. If your workout has not changed in weeks, that is often the reason. Your body adapts to what you ask of it, and then it stops changing.</p>
+<h2>What progressive overload means</h2>
+<p>Progressive overload means asking a little more of your muscles over time. Muscles grow and get stronger in response to a challenge. When the challenge stays the same, the body has no reason to change further. Guidelines from the American College of Sports Medicine on resistance training describe gradual progression as a core principle for continued gains.</p>
+<h2>Way 1: add one rep</h2>
+<p>This is the easiest place to start. Last week you did 10 reps, so aim for 11 this week. Keep the weight the same and keep your form clean. When you can reach the top of your rep range on every set, you are ready for the next step.</p>
+<h2>Way 2: add a little weight</h2>
+<p>Once the reps feel easy, increase the weight by a small amount, such as 1 to 2.5 kg. Do not jump too far, because the reps should still be doable with good form. A 2022 study that compared adding reps with adding weight found that both approaches led to muscle growth over several weeks, while adding weight gave larger strength gains. In practice, using both works well.</p>
+<h2>Way 3: write it down</h2>
+<p>This one makes the other two work. Memory is unreliable, and most people think they lifted more than they did. A simple note on your phone with the exercise, weight and reps lets you beat last time with confidence. If you cannot see last week's numbers, you cannot beat them.</p>
+<h2>Common mistakes</h2>
+<ul>
+<li><b>Lifting the same dumbbells for months.</b> If every set feels easy, it is time to progress.</li>
+<li><b>Adding weight with poor form.</b> A shaky rep builds little and risks injury. Progress only when the last rep is still controlled.</li>
+<li><b>Changing the workout every week.</b> You need enough repeats of an exercise to see numbers go up.</li>
+<li><b>Ignoring recovery.</b> Sleep and enough protein are what turn training into progress.</li>
+</ul>
+<h2>A simple way to start this week</h2>
+<p>Pick your main lifts. Write down today's weight and reps. Next session, aim to beat one number by a single rep. Do this on every session and you are using progressive overload.</p>
+<div class="box"><b class="t">Training at home</b>If you train at home and keep outgrowing your weights, adjustable dumbbells let you add small amounts of weight without buying a full rack. See the one I use on the shop page: <a href="/shop/#dumbbells">my adjustable dumbbells</a>.</div>
+<h2>Sources</h2>
+<ul><li>American College of Sports Medicine, Medicine and Science in Sports and Exercise, 2009: progression models in resistance training for healthy adults.</li><li>Plotkin et al., PeerJ, 2022: progressive overload with added reps versus added load.</li></ul>
+<div class="box"><b class="t">Check first if</b>you have an injury or a medical condition. Talk to your doctor or a qualified coach before changing your training.</div>
+"""))
