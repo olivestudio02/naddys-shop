@@ -243,11 +243,13 @@ page("/privacy/", "Privacy | Naddys Studio", "What data this site collects and h
  """<h1>Privacy</h1>
 <p>This site does not ask you to create an account and does not collect your name or email.</p>
 <p>It may use basic, privacy-friendly traffic counts (page views, not personal profiles) to see which articles are useful. When you click a link to Amazon, Amazon's own policies apply on their site and they may use cookies to credit the referral.</p>
-<p>If you message me through Instagram or email, I use your message only to reply to you.</p>""")
-page("/contact/", "Contact | Naddys Studio", "How to reach Naddys Studio.",
- f"""<h1>Contact</h1>
-<p>The best way to reach me is a direct message on <a href="{IG}">Instagram @naddys_studio</a>. You can also leave a comment on my <a href="{YT}">YouTube</a> videos.</p>
-<p>I read everything and reply when I can.</p>""")
+<p>If you message me through Instagram or email (naddy.mgt@gmail.com), I use your message only to reply to you.</p>""")
+page("/contact/", "Contact | Naddys Studio", "How to reach Naddys Studio: Instagram DM or email.",
+ f"""<p class="eyebrow" style="margin-top:34px">Contact</p><h1 style="margin-top:0">Get in touch</h1>
+<p class="lead">Message me on Instagram or send me an email. I read everything and reply when I can.</p>
+<div class="cards two"><a class="c" href="{IG}"><div class="cb"><span class="tag">Fastest</span><b>Instagram DM</b><span class="d">@naddys_studio</span></div></a>
+<a class="c" href="mailto:naddy.mgt@gmail.com"><div class="cb"><span class="tag">Email</span><b>naddy.mgt@gmail.com</b><span class="d">For longer questions</span></div></a></div>
+<p class="mut">You can also leave a comment on my <a href="{YT}">YouTube</a> videos.</p>""")
 
 # ---------- SHOP (from old index) ----------
 old = open(os.path.join(ROOT, "tools", "shop_template.html")).read()
