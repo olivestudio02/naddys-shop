@@ -8,7 +8,8 @@
    "note": "Why I pick it: it is an isolate with 27 g protein and 0 g sugar per scoop, plus a digestive enzyme blend the brand backs with a registered clinical trial. It is also blind-tested for protein accuracy and heavy metals. That testing is what sets it apart from a regular whey for me.",
    "url": "https://link.amazon/B09AVqkle",
    "image": "images/whey-isolate.jpg",
-   "id": "whey-isolate"
+   "id": "whey-isolate",
+   "headline": "Zero Sugar Low Carb Whey Protein Isolate for Muscle Gain"
   },
   {
    "enabled": true,
@@ -17,7 +18,8 @@
    "note": "My pick for a whey that is light on the gut. It is easy to digest and gentle on the stomach.",
    "url": "https://link.amazon/B0dsZw2JC",
    "image": "images/truebasics-whey.jpg",
-   "id": "truebasics-whey"
+   "id": "truebasics-whey",
+   "headline": "Easy to Digest Whey Protein for Sensitive Stomach"
   },
   {
    "enabled": true,
@@ -26,7 +28,8 @@
    "note": "Why I pick it: everything in one pack. Vitamins and minerals, a performance blend and joint support, all in one daily sachet of 3 tablets. One pack lasts a month, so there is no need to juggle separate bottles.",
    "url": "https://link.amazon/B0iJufzks",
    "image": "images/multivitamin.jpg",
-   "id": "multivitamin"
+   "id": "multivitamin",
+   "headline": "Best Daily Multivitamin for Gym Workout and Recovery"
   },
   {
    "enabled": false,
@@ -75,7 +78,8 @@
    "note": "Why I pick it: four forms of magnesium in one 440 mg tablet (bisglycinate, malate, L-threonate and a natural ocean-sourced magnesium), built around recovery and sleep after hard training. One product instead of buying them separately.",
    "url": "https://link.amazon/B0bsJQE1a",
    "image": "images/magnesium.jpg",
-   "id": "magnesium"
+   "id": "magnesium",
+   "headline": "Magnesium Supplement for Better Sleep and Muscle Recovery"
   },
   {
    "enabled": true,
@@ -84,7 +88,8 @@
    "note": "Why I pick it: creatine is one of the most researched supplements for strength and training, and this one uses Creapure, made in Germany by AlzChem to a 99.9% purity standard and doping-tested. It is the pure, no-frills creatine I trust.",
    "url": "https://link.amazon/B0cdG5A1J",
    "image": "images/creatine.jpg",
-   "id": "creatine"
+   "id": "creatine",
+   "headline": "Pure Creatine Monohydrate Powder for Strength and Muscle"
   },
   {
    "enabled": true,
@@ -93,7 +98,8 @@
    "note": "Why I pick it: one adjustable pair replaces a whole rack of dumbbells. A quick dial takes you from 2.5 to 24 kg, so you can train at home and keep progressing without buying more weights or finding space for them.",
    "url": "https://link.amazon/B00PUoZmG",
    "image": "images/dumbbells.jpg",
-   "id": "dumbbells"
+   "id": "dumbbells",
+   "headline": "Adjustable Dumbbells Set for Home Gym and Home Workout"
   },
   {
    "enabled": true,
@@ -102,7 +108,8 @@
    "note": "Why I pick it: a proper 10 mm thick leather lever belt for heavy squats and deadlifts. The lever locks in a second, it adjusts to waists from 24 to 45 inches, and it gives solid support when the weight gets heavy.",
    "url": "https://link.amazon/B0axXs0ic",
    "image": "images/lever-belt.jpg",
-   "id": "gym-belt"
+   "id": "gym-belt",
+   "headline": "Weightlifting Belt for Heavy Squats and Deadlifts"
   },
   {
    "enabled": true,
@@ -111,7 +118,8 @@
    "note": "Why I pick it: pull-ups at home with no screws and no drilling. It locks into the doorway in minutes. Check that your door frame is 75 to 94 cm wide, and stay within the 135 kg limit.",
    "url": "https://link.amazon/B0aTEBaRo",
    "image": "images/pullup-bar.jpg",
-   "id": "pull-up-bar"
+   "id": "pull-up-bar",
+   "headline": "Doorway Pull-Up Bar Without Screws for Home Workout"
   },
   {
    "enabled": true,
@@ -120,7 +128,8 @@
    "note": "Why I pick it: one bag that works as a backpack, briefcase or duffle, which suits a gym-then-office day. It has a separate shoe compartment and a waterproof section for wet clothes.",
    "url": "https://link.amazon/B09A3UJmv",
    "image": "images/gym-bag.jpg",
-   "id": "gym-bag"
+   "id": "gym-bag",
+   "headline": "Gym Bag With Shoe Compartment for Office and Gym"
   },
   {
    "enabled": true,
@@ -129,7 +138,8 @@
    "note": "Why I pick it: triple strength with 900 mg of EPA and DHA combined. Purified by molecular distillation to remove heavy metals, with Clean Label certification. The enteric coating means no fishy aftertaste.",
    "url": "https://link.amazon/B00EiXtyn",
    "image": "images/omega3.jpg",
-   "id": "omega-3"
+   "id": "omega-3",
+   "headline": "Omega-3 Fish Oil Capsules With No Fishy Aftertaste"
   }
  ]
 }

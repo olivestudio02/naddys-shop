@@ -100,8 +100,8 @@ const ICON={Protein:"💪",Supplements:"💊","Fitness accessories":"🏋️"};l
 const $=id=>document.getElementById(id);
 function esc(s){return String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 function render(){const q=$("q").value.toLowerCase();
- const list=all.filter(p=>(cat=="All"||p.category==cat)&&(p.title+" "+p.note).toLowerCase().includes(q));
- $("grid").innerHTML=list.length?list.map(p=>`<div class="pcard" id="${esc(p.id||p.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""))}"><div class="img" style="${p.image?`background-image:url('/${esc(p.image)}')`:""}">${p.image?"":ICON[p.category]||"🛒"}</div><div class="b"><span class="tag">${esc(p.category)}</span><h3>${esc(p.title)}</h3><p>${esc(p.note)}</p><a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon</a></div></div>`).join(""):`<p class="mut">No products yet. Check back soon!</p>`;}
+ const list=all.filter(p=>(cat=="All"||p.category==cat)&&((p.headline||"")+" "+p.title+" "+p.note).toLowerCase().includes(q));
+ $("grid").innerHTML=list.length?list.map(p=>`<div class="pcard" id="${esc(p.id||p.title.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""))}"><div class="img" style="${p.image?`background-image:url('/${esc(p.image)}')`:""}">${p.image?"":ICON[p.category]||"🛒"}</div><div class="b"><span class="tag">${esc(p.category)}</span><h3>${esc(p.headline||p.title)}</h3>${p.headline?`<p class="mut" style="font-size:13px;margin:-4px 0 8px">${esc(p.title)}</p>`:""}<p>${esc(p.note)}</p><a class="btn" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">Buy on Amazon</a></div></div>`).join(""):`<p class="mut">No products yet. Check back soon!</p>`;}
 function chips(){const cs=["All",...new Set(all.map(p=>p.category))];
  $("chips").innerHTML=cs.map(c=>`<button class="chipb ${c==cat?"on":""}" data-c="${c}">${c}</button>`).join("");
  document.querySelectorAll("#chips .chipb").forEach(b=>b.onclick=()=>{cat=b.dataset.c;chips();render()})}
