@@ -7,7 +7,8 @@
    "title": "MuscleBlaze Biozyme Iso-Zero Whey Protein Isolate, 1 kg",
    "note": "Why I pick it: it is an isolate with 27 g protein and 0 g sugar per scoop, plus a digestive enzyme blend the brand backs with a registered clinical trial. It is also blind-tested for protein accuracy and heavy metals. That testing is what sets it apart from a regular whey for me.",
    "url": "https://link.amazon/B09AVqkle",
-   "image": "images/whey-isolate.jpg"
+   "image": "images/whey-isolate.jpg",
+   "id": "whey-isolate"
   },
   {
    "enabled": true,
@@ -15,7 +16,8 @@
    "title": "TrueBasics Clean Whey Protein (Isolate + Concentrate)",
    "note": "My pick for a whey that is light on the gut. It is easy to digest and gentle on the stomach.",
    "url": "https://link.amazon/B0dsZw2JC",
-   "image": "images/truebasics-whey.jpg"
+   "image": "images/truebasics-whey.jpg",
+   "id": "truebasics-whey"
   },
   {
    "enabled": true,
@@ -23,7 +25,8 @@
    "title": "MuscleBlaze Biozyme Daily Multivitamin, 90 Tablets",
    "note": "Why I pick it: everything in one pack. Vitamins and minerals, a performance blend and joint support, all in one daily sachet of 3 tablets. One pack lasts a month, so there is no need to juggle separate bottles.",
    "url": "https://link.amazon/B0iJufzks",
-   "image": "images/multivitamin.jpg"
+   "image": "images/multivitamin.jpg",
+   "id": "multivitamin"
   },
   {
    "enabled": false,
@@ -80,7 +83,8 @@
    "title": "MuscleBlaze CreaPro Creatine Monohydrate (Creapure), 250 g",
    "note": "Why I pick it: creatine is one of the most researched supplements for strength and training, and this one uses Creapure, made in Germany by AlzChem to a 99.9% purity standard and doping-tested. It is the pure, no-frills creatine I trust.",
    "url": "https://link.amazon/B0cdG5A1J",
-   "image": "images/creatine.jpg"
+   "image": "images/creatine.jpg",
+   "id": "creatine"
   },
   {
    "enabled": true,
@@ -88,7 +92,8 @@
    "title": "Flexnest Adjustable Dumbbells, 24 kg Set of 2",
    "note": "Why I pick it: one adjustable pair replaces a whole rack of dumbbells. A quick dial takes you from 2.5 to 24 kg, so you can train at home and keep progressing without buying more weights or finding space for them.",
    "url": "https://link.amazon/B00PUoZmG",
-   "image": "images/dumbbells.jpg"
+   "image": "images/dumbbells.jpg",
+   "id": "dumbbells"
   },
   {
    "enabled": true,
@@ -96,7 +101,8 @@
    "title": "Manueklear Pro Leather Lever Gym Belt, 10 mm",
    "note": "Why I pick it: a proper 10 mm thick leather lever belt for heavy squats and deadlifts. The lever locks in a second, it adjusts to waists from 24 to 45 inches, and it gives solid support when the weight gets heavy.",
    "url": "https://link.amazon/B0axXs0ic",
-   "image": "images/lever-belt.jpg"
+   "image": "images/lever-belt.jpg",
+   "id": "gym-belt"
   },
   {
    "enabled": true,
@@ -104,7 +110,8 @@
    "title": "Sportneer Door Pull-Up Bar (No Screws)",
    "note": "Why I pick it: pull-ups at home with no screws and no drilling. It locks into the doorway in minutes. Check that your door frame is 75 to 94 cm wide, and stay within the 135 kg limit.",
    "url": "https://link.amazon/B0aTEBaRo",
-   "image": "images/pullup-bar.jpg"
+   "image": "images/pullup-bar.jpg",
+   "id": "pull-up-bar"
   },
   {
    "enabled": true,
@@ -112,7 +119,8 @@
    "title": "STRAPVILLA 3-in-1 Gym Bag with Shoe Compartment",
    "note": "Why I pick it: one bag that works as a backpack, briefcase or duffle, which suits a gym-then-office day. It has a separate shoe compartment and a waterproof section for wet clothes.",
    "url": "https://link.amazon/B09A3UJmv",
-   "image": "images/gym-bag.jpg"
+   "image": "images/gym-bag.jpg",
+   "id": "gym-bag"
   },
   {
    "enabled": true,
@@ -120,7 +128,8 @@
    "title": "TrueBasics Omega-3 Fish Oil, Triple Strength, 60 Capsules",
    "note": "Why I pick it: triple strength with 900 mg of EPA and DHA combined. Purified by molecular distillation to remove heavy metals, with Clean Label certification. The enteric coating means no fishy aftertaste.",
    "url": "https://link.amazon/B00EiXtyn",
-   "image": "images/omega3.jpg"
+   "image": "images/omega3.jpg",
+   "id": "omega-3"
   }
  ]
 }
