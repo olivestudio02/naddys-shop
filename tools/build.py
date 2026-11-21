@@ -8,8 +8,8 @@ YT = "https://www.youtube.com/@Naddys_Studio"
 
 CSS = """:root{--bg:#09090b;--card:#141417;--line:#26262b;--red:#6ec4ff;--red2:#3a9de0;--txt:#f5f1ee;--mut:#a3a0a0}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(1100px 520px at 50% -160px,#10324b,transparent),var(--bg);color:var(--txt);font:17px/1.65 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding:0 0 env(safe-area-inset-bottom);-webkit-font-smoothing:antialiased;overflow-x:clip}
-.wrap{max-width:1240px;margin:0 auto;padding:0 18px}.ph{margin:22px 0}.ph img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:16px;display:block;border:1px solid #26262b}.ph.hero{margin-top:0}
-.toc{background:#111114;border:1px solid #26262b;border-radius:14px;padding:16px 20px;margin:18px 0}.toc ol{margin:8px 0 0 18px;padding:0}.toc li{margin:4px 0}.toc a{color:#6ec4ff}
+.wrap{max-width:1240px;margin:0 auto;padding:0 18px}.ph{margin:22px 0}.ph img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:16px;display:block;border:1px solid #26262b}.ph.phero{margin-top:0}
+.intoc .th{font-weight:800;letter-spacing:2px;font-size:12px;text-transform:uppercase;color:#6ec4ff}.intoc{background:#111114;border:1px solid #26262b;border-radius:14px;padding:16px 20px;margin:18px 0}.intoc ol{margin:8px 0 0 18px;padding:0}.intoc li{margin:4px 0}.intoc a{color:#6ec4ff}
 .read{max-width:760px;margin:0}a{color:var(--red)}img{max-width:100%}
 .topbar{position:sticky;top:0;z-index:20;background:rgba(9,9,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:8px;max-width:1240px;margin:0 auto}
@@ -152,20 +152,20 @@ def enrich(slug, title, body):
         h=m.group(1); i=len(_re.findall(r"<h2", body[:m.start()]))
         out=f'<h2 id="s{i+1}">{h}</h2>'
         import os as _os
-        if h.strip() in SKIPH or n[0]>=4: return out
+        if h.strip() in SKIPH or n[0]>=5: return out
         n[0]+=1
         fn=f"/images/topics/{slug}-{n[0]}.jpg"
         if not _os.path.exists("."+fn): return out
         alt=html.escape(h.strip()+" ("+title+")")
         return out+f'<figure class="ph"><img src="{fn}" alt="{alt}" loading="lazy" width="1200" height="800"></figure>'
     body=_re.sub(r"<h2>([^<]*)</h2>", sub, body)
-    toc='<nav class="toc"><b class="t">In this article</b><ol>'+"".join(f'<li><a href="#s{i+1}">{html.escape(h)}</a></li>' for i,h in enumerate(heads) if h.strip() not in SKIPH)+'</ol></nav>'
+    toc='<div class="intoc"><div class="th">In this article</div><ol>'+"".join(f'<li><a href="#s{i+1}">{html.escape(h)}</a></li>' for i,h in enumerate(heads) if h.strip() not in SKIPH)+'</ol></div>'
     return body, toc
 
 def article(slug, title, desc, date, body, tagline, cat="Fitness"):
     path = f"/articles/{slug}/"
     body, toc = enrich(slug, title, body)
-    hero = f'<figure class="ph hero"><img src="{COVERS[slug]}" alt="{html.escape(title)}" width="1200" height="800"></figure>' if slug in COVERS else ""
+    hero = f'<figure class="ph phero"><img src="{COVERS[slug]}" alt="{html.escape(title)}" width="1200" height="800"></figure>' if slug in COVERS else ""
     ARTICLES.append((slug, title, tagline, date, cat))
     inner = pagehead(cat, title, "", f"By Nadeem &middot; {date_h(date)}") + f"""<div class="artgrid"><article class="read" style="margin:0;max-width:760px">
 <div class="box" style="margin-top:0"><b class="t">Quick note</b>This is general information from my own research and experience, not medical advice. Talk to your doctor before changing your diet, starting a supplement or a new exercise plan, especially if you have a health condition or take medicines.</div>
