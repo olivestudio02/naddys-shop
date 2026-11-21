@@ -268,6 +268,10 @@ page("/articles/", "Fitness Articles | Naddys Studio",
 
 home_cards = "".join(card(*a_) for a_ in ARTICLES[:3])
 # ---------- HOME ----------
+FOLLOW = f"""<div class="band deep"><div class="bi"><h2 style="text-align:center">Learn with me, every day and every week</h2><p class="mut" style="text-align:center;max-width:60ch;margin:0 auto 22px">The articles here go deeper. For a steady stream of evidence-based guidance, follow me on both platforms.</p>
+<div class="follow"><div class="fcol"><span class="fk">Instagram</span><h3>Daily science-backed tips</h3><p>A short, practical fitness or nutrition tip every day, grounded in published research and explained in under a minute.</p><a class="btn" href="{IG}" rel="noopener">Follow on Instagram</a></div>
+<div class="fcol"><span class="fk">YouTube</span><h3>Weekly in-depth videos</h3><p>Several long-form videos every week that unpack the research behind training, nutrition and fat loss, with a clear plan you can apply.</p><a class="btn" href="{YT}" rel="noopener">Subscribe on YouTube</a></div></div></div></div>"""
+
 page("/", "Naddys Studio | Science-backed fitness, made simple",
  "Science-backed fitness, made simple. Articles on training, nutrition and supplements, plus the products I actually use.",
  f"""<section class="fb"><div class="ph"><img src="/images/brand/naddy-gym.jpg" alt="Nadeem in the gym" width="1080" height="1910"></div>
@@ -281,9 +285,7 @@ page("/", "Naddys Studio | Science-backed fitness, made simple",
 <div class="band alt"><div class="bi"><h2>Latest articles</h2><div class="cards three">{cards[:0]}{home_cards}</div>
 <p><a class="btn o" href="/articles/">All articles</a></p></div></div>
 <div class="band"><div class="bi"><section class="abouthero" style="padding:0"><img src="/images/brand/naddy-kitchen.jpg" alt="Nadeem in the kitchen" loading="lazy" width="440" height="584"><div><p class="eyebrow">My story</p><h2 style="margin-top:0">No shortcuts. Just what works.</h2><p class="lead">I test everything on my own body first. If it does not work for a busy person, I will not tell you to do it.</p><div class="box"><b class="t">Why trust this site</b>I only recommend brands I have checked for credibility and screened for fakes, and only what I am willing to take myself.</div><a class="btn" href="/about/">Read my story</a></div></section></div></div>
-<div class="band deep"><div class="bi"><h2 style="text-align:center">Learn with me, every day and every week</h2><p class="mut" style="text-align:center;max-width:60ch;margin:0 auto 22px">The articles here go deeper. For a steady stream of evidence-based guidance, follow me on both platforms.</p>
-<div class="follow"><div class="fcol"><span class="fk">Instagram</span><h3>Daily science-backed tips</h3><p>A short, practical fitness or nutrition tip every day, grounded in published research and explained in under a minute.</p><a class="btn" href="{IG}" rel="noopener">Follow on Instagram</a></div>
-<div class="fcol"><span class="fk">YouTube</span><h3>Weekly in-depth videos</h3><p>Several long-form videos every week that unpack the research behind training, nutrition and fat loss, with a clear plan you can apply.</p><a class="btn" href="{YT}" rel="noopener">Subscribe on YouTube</a></div></div></div></div>
+{FOLLOW}
 <script>if(location.hash){{location.replace("/shop/"+location.hash)}}</script>""", active="Home")
 
 # ---------- ABOUT ----------
@@ -295,10 +297,11 @@ page("/about/", "About Nadeem | Naddys Studio",
 <p><a class="btn" href="/articles/">Read my articles</a><a class="btn o" href="/shop/">See my picks</a></p></div></section>
 <div class="artgrid"><div style="max-width:760px">
 <h2 style="margin-top:10px">What this site is</h2>
-<p>A simple place for fitness information I would give a friend: what the research says, what I do myself, and the few products I trust. I share short videos on <a href="{IG}">Instagram</a> and <a href="{YT}">YouTube</a>, and the longer versions here as articles.</p>
+<p>A simple place for fitness information I would give a friend: what the research says, what I do myself, and the few products I trust. I share a short science-backed tip every day on <a href="{IG}">Instagram</a>, in-depth videos every week on <a href="{YT}">YouTube</a>, and the longer versions here as articles.</p>
 <h2>How I choose products</h2>
 <p>I test every product on my own body first. I check the brand, look for fakes, and recommend only what I am willing to take myself. Some links go to Amazon and I earn a small commission if you buy, at no extra cost to you. <a href="/disclosure/">Read the full disclosure</a>.</p></div>
-<aside class="side"><div class="box"><b class="t">Find me online</b><a href="{IG}">Instagram @naddys_studio</a><br><a href="{YT}">YouTube @Naddys_Studio</a><br><a href="/contact/">Contact me</a></div></aside></div>""", active="About")
+<aside class="side"><div class="box"><b class="t">Find me online</b><a href="{IG}">Instagram @naddys_studio</a><br><a href="{YT}">YouTube @Naddys_Studio</a><br><a href="/contact/">Contact me</a></div></aside></div>
+{FOLLOW}""", active="About")
 
 # ---------- LEGAL ----------
 page("/disclosure/", "Disclosure | Naddys Studio", "How this site earns money and how I choose what to recommend.",
